@@ -1,0 +1,18 @@
+{
+  "prepared_date": "2026-11-19",
+  "family": "iSafe Keylogger PRO / AllInOne Keylogger (WPK lineage)",
+  "family_confidence": "high; analyst attribution, not a successful AV label",
+  "input_files": 400,
+  "input_expanded_bytes": 700585231,
+  "payload_files": 24,
+  "payload_bytes": 15785547,
+  "parsed_API_call_rows": 30044,
+  "BSON_records": 31538,
+  "EVTX_exports": 638,
+  "EVTX_unique_records_per_task_sum": 10156,
+  "screenshots": 209,
+  "historical_wlog_rows": 2057,
+  "reconstruction_status": "inert semantic models with unresolved workers; not original source",
+  "passwords": "redacted",
+  "malware_executed_during_this_analysis": false
+}

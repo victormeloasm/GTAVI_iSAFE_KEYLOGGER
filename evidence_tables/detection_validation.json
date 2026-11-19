@@ -1,0 +1,37 @@
+{
+  "FltEng.dll": [],
+  "IMME.dll": [
+    "iSafe_IMME_Hook_Module_Forensic"
+  ],
+  "IMME64.dll": [
+    "iSafe_IMME_Hook_Module_Forensic"
+  ],
+  "Microsoft.VC90.CRT.manifest": [],
+  "Microsoft.VC90.MFC.manifest": [],
+  "SecPro.exe": [],
+  "SvcControl.exe": [],
+  "W0000": [],
+  "W0002": [],
+  "W0003": [],
+  "WPK.exe": [
+    "iSafe_WPK_Core_Forensic"
+  ],
+  "WPK64.exe": [
+    "iSafe_WPK64_Helper_Forensic"
+  ],
+  "curllib.dll": [],
+  "df.exe": [],
+  "libeay32.dll": [],
+  "libsasl.dll": [],
+  "mfc90u.dll": [],
+  "msvcp90.dll": [],
+  "msvcr90.dll": [],
+  "openldap.dll": [],
+  "ssleay32.dll": [],
+  "subcfg": [],
+  "wpkr.exe": [],
+  "wpkun.bin": [],
+  "GTA 6.msi": [
+    "iSafe_Disguised_MSI_Case_Specific"
+  ]
+}

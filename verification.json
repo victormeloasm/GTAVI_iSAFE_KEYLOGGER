@@ -1,0 +1,37 @@
+{
+  "prepared_date": "2026-11-19",
+  "report_pages": 95,
+  "report_sha256": "ef0a18d0ae4f014a8e6f565e0a008ab81dc824656fcd636806d18be19d38717b",
+  "original_archive_sha256": "0d41799d141bface51bc75c5015003cc50aed8abbc54a62e25f3a267333b66e9",
+  "input_inventory_count": 400,
+  "msi_payloads_recovered": 24,
+  "CAPE_API_rows_reviewed": 30044,
+  "BSON_records_decoded": 31538,
+  "EVTX_exports_parsed": 638,
+  "EVTX_unique_records_sum": 10156,
+  "screenshots_decoded_and_OCR_attempted": 209,
+  "historical_wLog_rows": 2057,
+  "compilation_and_model_checks": [
+    {
+      "source": "source/WPK_readable.c",
+      "compiled": true,
+      "self_test": "WPK semantic and passive-parser checks passed."
+    },
+    {
+      "source": "source/WPK64_readable.c",
+      "compiled": true,
+      "self_test": "WPK64 semantic checks passed; no native operations were performed."
+    }
+  ],
+  "yara_rules_compiled": 4,
+  "yara_positive_control_files": 5,
+  "yara_unmatched_control_files": 20,
+  "sigma_yaml_files_parsed": 2,
+  "sigma_backend_tested": false,
+  "PDF_out_of_bounds_text": 0,
+  "PDF_missing_glyphs": 0,
+  "stored_SMTP_secret_in_deliverables": false,
+  "original_malware_executed_during_analysis": false,
+  "original_PE_samples_in_deliverable": false,
+  "reconstruction_scope": "Inert semantic models; missing application worker bodies documented; not original source or byte-equivalent rebuilds."
+}

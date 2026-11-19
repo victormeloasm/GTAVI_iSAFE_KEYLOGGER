@@ -1,0 +1,26 @@
+type,value,confidence,evidence,interpretation
+sha256,368427c356b85f99e0d58d06eeac2bca210c3aa6383c19eb4722d9d4fdb4b82a,high,original MSI / task 8 target,Case-specific disguised installer
+sha256,35e6be911a65cae4fab14f5354c66a8ef5fb19301043d2456804fcb3a59e0ec4,high,MSI cabinet / WPK.exe,Component identity; role context required
+sha256,980d667a7abdf54d598cbbdbb51f3ed2f70614c6b1e3950721834e9ae90f5f56,high,MSI cabinet / WPK64.exe,Component identity; role context required
+sha256,4319b9a511b7edae8f22903a1748e3e6d34925896459b585d426258a59d180ed,high,MSI cabinet / IMME.dll,Component identity; role context required
+sha256,69222394c50e162942053be9852d2200b4d65dfc9a6152cfa05280b5368a7d21,high,MSI cabinet / IMME64.dll,Component identity; role context required
+sha256,27f36031c76e6e99ca440b998b38c1f76503ecdb9abe32cc63b935b349ae38c5,high,MSI cabinet / SecPro.exe,Component identity; role context required
+sha256,580f5c942c5529743baf4e97e3e2525fb111474953fb94da32cb6edac841f50b,high,MSI cabinet / SvcControl.exe,Component identity; role context required
+sha256,f6ffaf12545d708ed2689088778836329993647ac2915e4472495b4cdac808ae,high,MSI cabinet / wpkr.exe,Component identity; role context required
+sha256,42e97a35e1e3fbd97664e705ab073773f04da18140fe1f925c1217d82f7c8970,high,MSI cabinet / FltEng.dll,Component identity; role context required
+sha256,63d1c563992fbb7c44ec087637ecb1995eb6888f5b2e15704c5e15acc51d6dcc,high,MSI cabinet / df.exe,Component identity; role context required
+sha256,c8b2e1b66d22b31e1e8502e76d048f9438574ab2ef8ac38109b17e1e1e1f1658,high,MSI cabinet / wpkun.bin,Component identity; role context required
+email,taratararosoroso@yandex.com,high,subcfg file offset 0x1bc,Configured SMTP account; not proof of successful delivery or account ownership
+hostname,smtp.yandex.com,context,subcfg file offset 0xec,Shared SMTP provider; use only with account/process/path correlation
+path,C:\ProgramData\windows-systempro\WPK.exe,high,MSI File/Directory tables,Installation/storage path in this wrapper
+path,C:\ProgramData\windows-systempro\WPK64.exe,high,MSI File/Directory tables,Installation/storage path in this wrapper
+path,C:\Users\Public\L001\subcfg,high,MSI File/Directory tables,Installation/storage path in this wrapper
+path,C:\Users\Public\L001\W0000,high,MSI File/Directory tables,Installation/storage path in this wrapper
+string,_MPKON_TX_2,high,decompiler / extracted PE,Lineage or IPC correlation string
+string,WWWPXX64_ON_,high,decompiler / extracted PE,Lineage or IPC correlation string
+string,_CON_QUIT_,high,decompiler / extracted PE,Lineage or IPC correlation string
+string,WPK_WIND,high,decompiler / extracted PE,Lineage or IPC correlation string
+string,WPK64_W,high,decompiler / extracted PE,Lineage or IPC correlation string
+string,MMXIME32_,high,decompiler / extracted PE,Lineage or IPC correlation string
+string,MMXIME64_,high,decompiler / extracted PE,Lineage or IPC correlation string
+registry,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run\iSafe,high,MSI Registry table,Declared logon persistence value

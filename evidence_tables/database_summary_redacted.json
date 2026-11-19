@@ -1,0 +1,331 @@
+{
+  "sha256": "e509bc4e06554d74b0ac7a589e654108e772dd4afa635785824697185e47ce35",
+  "integrity": "ok",
+  "schema": [
+    {
+      "name": "wLog",
+      "type": "table",
+      "sql": "CREATE TABLE [wLog] (\r\n[fdId] INTEGER  PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n[fdType] INTEGER  NOT NULL,\r\n[fdTime] FLOAT  NOT NULL,\r\n[fdPcName] VARCHAR(50)  NOT NULL,\r\n[fdUser] VARCHAR(50)  NOT NULL,\r\n[fdData] TEXT  NULL,\r\n[fdWindow] VARCHAR(255)  NULL,\r\n[fdFilePath] VARCHAR(255)  NULL,\r\n[fdDescription] VARCHAR(255)  NULL,\r\n[fdCompany] TEXT  NULL,\r\n[subType] INTEGER DEFAULT '''''''0''''''' NULL,\r\n[xType] INTEGER DEFAULT '''''''0''''''' NULL,\r\n[mtype] INTEGER DEFAULT '''''''0''''''' NULL\r\n)"
+    },
+    {
+      "name": "sqlite_sequence",
+      "type": "table",
+      "sql": "CREATE TABLE sqlite_sequence(name,seq)"
+    },
+    {
+      "name": "rLog",
+      "type": "table",
+      "sql": "CREATE TABLE [rLog] (\r\n[rid] INTEGER  PRIMARY KEY AUTOINCREMENT NOT NULL,\r\n[xdata] BLOB DEFAULT '''0''' NULL,\r\n[wid] INTEGER  UNIQUE NOT NULL\r\n)"
+    },
+    {
+      "name": "sqlite_autoindex_rLog_1",
+      "type": "index",
+      "sql": null
+    },
+    {
+      "name": "delxdata",
+      "type": "trigger",
+      "sql": "CREATE TRIGGER [delxdata] \r\nAFTER DELETE ON [wLog] \r\nFOR EACH ROW \r\nBEGIN \r\n\r\ndelete from rLog where wid=old.fdId;\r\n\r\nEND"
+    }
+  ],
+  "rows": 2057,
+  "rlog_rows": 50,
+  "rlog_bytes": 1458,
+  "type_counts": {
+    "2": 170,
+    "4": 172,
+    "10": 93,
+    "17": 1277,
+    "1": 248,
+    "3": 12,
+    "6": 50,
+    "16": 35
+  },
+  "host_counts": {
+    "Host-A": 2002,
+    "Host-B": 55
+  },
+  "decoded_min": "2022-09-09T04:49:16",
+  "decoded_max": "2026-11-04T15:33:26",
+  "timestamp_offset_seconds": 1292155200.0,
+  "matching_screenshot_timestamps": 154,
+  "total_screenshot_timestamps": 172,
+  "type_profile": {
+    "1": {
+      "count": 248,
+      "windows": [
+        [
+          "Add/Edit SMTP",
+          67
+        ],
+        [
+          "iSafe Keylogger PRO",
+          14
+        ],
+        [
+          "L001",
+          14
+        ],
+        [
+          "Authorization \u2014 Mozilla Firefox",
+          14
+        ],
+        [
+          "Yandex Mail \u2014 Mozilla Firefox",
+          11
+        ],
+        [
+          "Mozilla Firefox",
+          9
+        ],
+        [
+          "Gestionnaire de mots de passe\u00a0Google - Google Chrome",
+          6
+        ],
+        [
+          "McAfee\u00ae WebAdvisor - \u00c9valuations de s\u00e9curit\u00e9 de sites Web - Google Chrome",
+          5
+        ]
+      ],
+      "data_lengths": {
+        "min": 7,
+        "max": 1499
+      }
+    },
+    "2": {
+      "count": 170,
+      "windows": [
+        [
+          "*warwar redmax.txt\u00a0- Bloc-notes",
+          18
+        ],
+        [
+          "[INCIDENTAL MAILBOX REDACTED]\u00a0- Bloc-notes",
+          17
+        ],
+        [
+          "*Nouveau document texte (4).txt\u00a0- Bloc-notes",
+          17
+        ],
+        [
+          "L001",
+          14
+        ],
+        [
+          "key .txt\u00a0- Bloc-notes",
+          9
+        ],
+        [
+          "key word recherche mail.txt\u00a0- Bloc-notes",
+          8
+        ],
+        [
+          "iSafe Keylogger PRO",
+          8
+        ],
+        [
+          "Gestionnaire de mots de passe\u00a0Google - Google Chrome",
+          7
+        ]
+      ],
+      "data_lengths": {
+        "min": 2,
+        "max": 2255
+      }
+    },
+    "3": {
+      "count": 12,
+      "windows": [
+        [
+          "iSafe Keylogger PRO",
+          12
+        ]
+      ],
+      "data_lengths": {
+        "min": 4,
+        "max": 5
+      }
+    },
+    "4": {
+      "count": 172,
+      "windows": [
+        [
+          "iSafe Keylogger PRO",
+          43
+        ],
+        [
+          "Add/Edit SMTP",
+          16
+        ],
+        [
+          "",
+          9
+        ],
+        [
+          "Yandex Mail - Google Chrome",
+          7
+        ],
+        [
+          "\u0625\u0633\u062a\u062e\u0631\u0627\u062c \u0627\u0644\u0625\u064a\u0645\u064a\u0644\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0647\u062f\u0641\u0629 | \u0633\u062d\u0628 \u0627\u0644\u0623\u064a\u0645\u064a\u0644\u0627\u062a \u0645\u0646 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 | \u062a\u062d\u0645\u064a\u0644 serpdigger - YouTube - Google Chrome",
+          6
+        ],
+        [
+          "free online ftp server - Recherche Google - Google Chrome",
+          5
+        ],
+        [
+          "\u0625\u0631\u0633\u0627\u0644 \u0622\u0644\u0627\u0641 \u0627\u0644\u0627\u064a\u0645\u064a\u0644\u0627\u062a \u064a\u0648\u0645\u064a\u0627\u064b \u0628\u0644\u0627 \u062d\u062f\u0648\u062f \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 Gmail \u0623\u0648 SMTP \u0645\u062c\u0627\u0646\u064b\u0627! - YouTube - Google Chrome",
+          5
+        ],
+        [
+          "App passwords \u2014 Yandex ID - Google Chrome",
+          4
+        ]
+      ],
+      "data_lengths": {
+        "min": 19,
+        "max": 19
+      }
+    },
+    "6": {
+      "count": 50,
+      "windows": [
+        [
+          "Password:",
+          17
+        ],
+        [
+          "Add/Edit SMTP",
+          5
+        ],
+        [
+          "*warwar redmax.txt\u00a0- Bloc-notes",
+          5
+        ],
+        [
+          "*[INCIDENTAL MAILBOX REDACTED]\u00a0- Bloc-notes",
+          4
+        ],
+        [
+          "iSafe Keylogger PRO",
+          3
+        ],
+        [
+          "*Nouveau document texte (4).txt\u00a0- Bloc-notes",
+          3
+        ],
+        [
+          "*yandex cod mail.txt\u00a0- Bloc-notes",
+          2
+        ],
+        [
+          "[INCIDENTAL MAILBOX REDACTED]\u00a0- Bloc-notes",
+          1
+        ]
+      ],
+      "data_lengths": {
+        "min": 1,
+        "max": 549
+      }
+    },
+    "10": {
+      "count": 93,
+      "windows": [
+        [
+          "iSafe Keylogger PRO",
+          18
+        ],
+        [
+          "Add/Edit SMTP",
+          11
+        ],
+        [
+          "\u0625\u0631\u0633\u0627\u0644 \u0622\u0644\u0627\u0641 \u0627\u0644\u0627\u064a\u0645\u064a\u0644\u0627\u062a \u064a\u0648\u0645\u064a\u0627\u064b \u0628\u0644\u0627 \u062d\u062f\u0648\u062f \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 Gmail \u0623\u0648 SMTP \u0645\u062c\u0627\u0646\u064b\u0627! - YouTube - Google Chrome",
+          7
+        ],
+        [
+          "",
+          5
+        ],
+        [
+          "[INCIDENTAL MAILBOX REDACTED]\u00a0- Bloc-notes",
+          4
+        ],
+        [
+          "Add/Edit FTP connection",
+          4
+        ],
+        [
+          "free online ftp server - Recherche Google - Google Chrome",
+          4
+        ],
+        [
+          "\u0625\u0633\u062a\u062e\u0631\u0627\u062c \u0627\u0644\u0625\u064a\u0645\u064a\u0644\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0647\u062f\u0641\u0629 | \u0633\u062d\u0628 \u0627\u0644\u0623\u064a\u0645\u064a\u0644\u0627\u062a \u0645\u0646 \u0627\u0644\u0645\u0648\u0627\u0642\u0639 | \u062a\u062d\u0645\u064a\u0644 serpdigger - YouTube - Google Chrome",
+          4
+        ]
+      ],
+      "data_lengths": {
+        "min": 0,
+        "max": 80
+      }
+    },
+    "16": {
+      "count": 35,
+      "windows": [
+        [
+          "iSafe Keylogger PRO",
+          34
+        ],
+        [
+          "key .txt\u00a0- Bloc-notes",
+          1
+        ]
+      ],
+      "data_lengths": {
+        "min": 21,
+        "max": 1499
+      }
+    },
+    "17": {
+      "count": 1277,
+      "windows": [
+        [
+          "iSafe Keylogger PRO",
+          249
+        ],
+        [
+          "",
+          119
+        ],
+        [
+          "Add/Edit SMTP",
+          105
+        ],
+        [
+          "Yandex Mail - Google Chrome",
+          69
+        ],
+        [
+          "\u0625\u0631\u0633\u0627\u0644 \u0622\u0644\u0627\u0641 \u0627\u0644\u0627\u064a\u0645\u064a\u0644\u0627\u062a \u064a\u0648\u0645\u064a\u0627\u064b \u0628\u0644\u0627 \u062d\u062f\u0648\u062f \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 Gmail \u0623\u0648 SMTP \u0645\u062c\u0627\u0646\u064b\u0627! - YouTube - Google Chrome",
+          40
+        ],
+        [
+          "Nouvel onglet - Google Chrome",
+          37
+        ],
+        [
+          "Program Manager",
+          36
+        ],
+        [
+          "Add/Edit Google Drive information",
+          33
+        ]
+      ],
+      "data_lengths": {
+        "min": 47,
+        "max": 298
+      }
+    }
+  }
+}

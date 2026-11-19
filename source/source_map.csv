@@ -1,0 +1,145 @@
+symbol,supplied_C_start_line,supplied_C_end_line,APIs,resolved_references
+FUN_00822db0,173537,173552,UnhookWinEvent,
+FUN_00822ec0,173552,173565,,
+FUN_00823810,173565,173588,SetWinEventHook,
+FUN_00823890,173588,173609,FindFirstFileW; FindClose,
+FUN_00823910,173609,173618,SetFilePointer,
+FUN_00823930,173618,173631,CloseHandle,
+FUN_00823950,173631,173672,SHGetSpecialFolderPathW; CreateFileW,_MUTEXT-LOG-FIE_
+FUN_00823c70,173672,173718,CreateMutexW; WaitForSingleObject; GetFileSize; SetFilePointer; WriteFile; ReleaseMutex,
+FUN_008244f0,173718,173739,GetPrinterW; GetLastError,
+FUN_00824540,173739,173789,GetModuleHandleW; FindResourceW; LoadResource; LockResource; SizeofResource; CreateFileW; WriteFile; CloseHandle,
+FUN_00824640,173789,173800,ShellExecuteW,open
+FUN_00825160,173800,173824,OpenPrinterW; ClosePrinter,
+FUN_008251d0,173824,173871,IsWindow,
+FUN_008262d0,173871,173904,GetUserNameW; GetComputerNameW,
+FUN_008267e0,173904,173918,,
+FUN_00826800,173918,173996,CONCAT31,IMME64.dll; WPK64.exe
+FUN_008269c0,173996,174038,ExpandEnvironmentStringsW,%USERPROFILE%
+FUN_00826b10,174038,174082,GetLocalTime,sd%04d-%02d-%02d_%02d-%02d-%02d; .wav
+FUN_0082c3d0,174255,174347,CONCAT31; NetUserGetInfo; NetApiBufferFree,
+FUN_00830380,174421,174696,CONCAT31,"subcfg; subcfg; W0002; W0002; W0003; W0003; W0000; W0000; CONFIG; W0000; W0000; wLog; W0000; begin transaction;; insert into wLog values (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);; select * from wLog order by 1;; commit transaction;"
+FUN_00830c9e,174712,175031,,"subcfg; subcfg; W0002; W0002; W0003; W0003; W0000; W0000; CONFIG; W0000; W0000; wLog; W0000; begin transaction;; insert into wLog values (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);; select * from wLog order by 1;; commit transaction;; W0000; CONFIG; W0000; 20; sd2"
+FUN_008310d0,175031,175716,ExpandEnvironmentStringsW; SHGetSpecialFolderPathW; GetLastError; SetFileAttributesW; GetLocalTime; CONCAT31; lstrlenW; ExitProcess,%PUBLIC%; %APPDATA%; Microsoft\Windows\Recent\; %APPDATA%; Microsoft\Windows\Recent\; L001\; W0000; CONFIG; W0000; W0002; W0002; W0002; W0003; W0003; NULL; W0003; W0003; subcfg; subcfg; subcfg; bdel; subcfg; subcfg; ftpokay.txt; kern.bin
+FUN_008321d0,175716,175740,,
+FUN_00832500,175740,175770,SetWindowTextW; CoInitialize,WPK_WIND; W0000
+FUN_008325b5,175785,175868,GetLocalTime; CreateMutexW; CreateEventW,wLog; rLog; W0000; %ws%04d_%02d_%02d-%02d%02d%02d; W0000; W0000; CONFIG; W0000; ixsaflog.dat; wLog
+FUN_008328e4,175883,176045,GdiplusStartup; SetClipboardViewer; RegisterHotKey; setLBDownHook; WTSRegisterSessionNotification; RegisterRawInputDevices; GetLocalTime; CreateThread; CreateEventW; SetTimer; LoadCursorW,"chk db okay
+; _CON_QUIT_; MMXEUSAUL_; MMXIME64_; wpk64.exe; #3763; MMXIME32_; PNG; PNG; iSafe Keylogger PRO; MMXPPRRT_; http://isafesoft.com/faq/index.htm#welcome; Thank You For Installing iSafe Keylogger v6.2; 1,Use hotkey Ctrl + Alt + Shift + X to open the keylogger
+2,Check the ""Setting->General->Hide Tray Icon"" to hide Tray-Icon
+3,Go to ""Setting->Delivery"" tab to set your email to receive logs.; subcfg; init okay
+"
+FUN_00832f60,176045,176067,CreateWindowExW,
+FUN_00833e10,176096,176132,LoadIconW; LoadCursorW; RegisterClassExW,
+FUN_00833e90,176132,176194,CreateMutexW; GetLastError; ExitProcess; RegisterWindowMessageW; Ordinal_115; LoadStringW; LoadAcceleratorsW; GetMessageW; TranslateAcceleratorW; TranslateMessage; DispatchMessageW,"ixsaflog.dat; start...
+; _MPKON_TX_2; chkbase okay
+; UWM_LLLBDN_MSG-44E531B1_14D3_11d5_A025_006067718D04"
+FUN_00834090,176194,176203,,
+FUN_008340b0,176203,176216,,
+FUN_00834200,176216,176247,WriteFile; GetLastError,
+FUN_00834280,176247,176270,GetFileAttributesW; GetLastError,
+FUN_00834310,176270,176281,CloseHandle,
+FUN_00834330,176281,176290,,
+FUN_00834350,176290,176319,CreateFileW; GetLastError,
+FUN_00834680,176319,176335,CloseHandle,
+FUN_008346d0,176335,176362,wsprintfW; CreateEventW,UpdateThreadTerminateEvent_%d; UpdateThreadRefreshEvent_%d
+FUN_008350d0,176362,176385,GlobalAlloc; GlobalLock; GlobalUnlock,
+FUN_00835160,176385,176427,EnumPrintersW; LocalAlloc; LocalFree,
+FUN_00835a40,176427,176471,SHGetMalloc,
+FUN_00835b30,176471,176497,,
+FUN_008367b0,176497,176508,,
+FUN_00836830,176508,176520,,
+FUN_00836860,176520,176534,waveInStop,
+FUN_00836c00,176534,176569,waveInPrepareHeader; waveInAddBuffer; CreateThread; waveInStart; SetThreadPriority,
+FUN_00836e00,176569,176609,waveInGetErrorTextW; wsprintfW; OutputDebugStringW,%ws: %ws; Error %d in querying the error string for error code %d
+FUN_00836f60,176609,176735,GlobalAlloc; GlobalLock; waveInOpen; CreateEventW; DeleteFileW; mmioOpenW; mmioCreateChunk; mmioWrite; mmioAscend,".\TestRecorder\Recorder.cpp; File: %ws ,Line Number:%d; .\TestRecorder\Recorder.cpp; File: %ws ,Line Number:%d; .\TestRecorder\Recorder.cpp; Can not write Wave Header..File: %ws ,Line Number:%d; .\TestRecorder\Recorder.cpp; File: %s ,Line Number:%d; .\TestRecorder\Recorder.cpp; File: %ws ,Line Number:%d"
+FUN_00837470,176735,176744,,
+FUN_00837490,176744,176800,CloseHandle; waveInClose; GlobalUnlock; GlobalFree; mmioAscend; mmioClose,".\TestRecorder\Recorder.cpp; File: %ws ,Line Number:%d; .\TestRecorder\Recorder.cpp; File: %ws ,Line Number:%d"
+FUN_008387a0,176800,176836,CreateProcessW; WaitForSingleObject; CloseHandle,
+FUN_008388b0,176836,176910,,123; isafeklg
+FUN_008394a0,176910,176944,,
+FUN_008395a0,176944,176968,NetUserGetInfo; NetApiBufferFree,
+FUN_00839600,176968,177002,GetUserNameW; GetComputerNameW,
+FUN_00839c70,177002,177023,GetFileAttributesW,
+FUN_0083a330,177023,177050,,
+FUN_0083a3e0,177050,177079,,
+FUN_0083a490,177079,177106,,
+FUN_0083a500,177106,177119,GetFileAttributesW,
+FUN_0083a540,177119,177137,,
+FUN_0083a5a0,177137,177159,SetFileAttributesW; OutputDebugStringW; DeleteFileW,SetFileAttributes err
+FUN_0083a600,177159,177180,GetFileAttributesW,
+FUN_0083a780,177180,177271,FindFirstFileW; FindNextFileW; FindClose,..
+FUN_0083a900,177271,177295,,
+FUN_0083a960,177295,177510,GetVersionExW; GetModuleHandleW; GetProcAddress; GetSystemInfo; GetSystemMetrics,"GetNativeSystemInfo; kernel32.dll; Microsoft ; Windows 7 ; Windows Vista ; Windows Server 2008 ; Windows 7 ; Windows Server 2008 R2 ; Windows 8 ; GetProductInfo; kernel32.dll; Windows Server 2003 R2, ; Windows Storage Server 2003; Windows Server 2003, ; Windows XP Professional x64 Edition; Datacenter Edition for Itanium-based Systems; Enterprise Edition for Itanium-based Systems; Datacenter x64 Edition; Enterprise x64 Edition; Standard x64 Edition; Compute Cluster Edition; Datacenter Edition; Enterprise Edition; Web Edition; Standard Edition; Windows XP ; Home Edition; Professional; Windows 2000 ; Professional; Datacenter Server; Advanced Server; Server;  (build %d); , 64-bit; , 32-bit; This sample does not support this version of Windows.
+"
+FUN_0083b2d0,177510,177579,,
+FUN_0083c330,177579,177615,GetModuleFileNameW,
+FUN_0083c790,177615,177697,CONCAT31; GetFileAttributesW; SetFileAttributesW; CopyFileW,\\?\
+FUN_0083d140,177697,177713,,
+FUN_0083d610,177713,177803,CreateDirectoryW,
+FUN_0083d8d0,177803,177859,FindFirstFileW; FindNextFileW; FindClose,..; ..
+FUN_0083da90,177859,177919,CONCAT31,
+FUN_0083df60,177919,177971,FindFirstFileW; FindNextFileW; FindClose,..
+FUN_0083e310,177971,178051,NetUserEnum; NetApiBufferFree,A system error has occurred: %d
+FUN_0083ea50,178051,178084,,
+FUN_0083eb30,178084,178161,CreateDirectoryW,
+FUN_00840a70,178161,178204,FindResourceW; SizeofResource; LoadResource; GlobalAlloc; GlobalLock; CreateStreamOnHGlobal; GlobalUnlock; FreeResource,
+FUN_00840b50,178204,178259,,
+FUN_00840f60,178259,178332,DestroyIcon,
+FUN_00841400,178332,178372,Shell_NotifyIconW,
+FUN_00841910,178372,178408,lstrcpynW; Shell_NotifyIconW,
+FUN_00841e00,178408,178522,OpenEventA; InitializeSecurityDescriptor; SetSecurityDescriptorDacl; CreateEventA; OpenMutexA; CreateMutexA; WaitForSingleObject; OpenFileMappingA; CreateFileMappingA; MapViewOfFile,Global\EVENT_%s; Global\MUTEX_%s; Local\FILEMAPPING_%s; Global\FILEMAPPING_%s
+FUN_008421c9,178522,178533,ReleaseMutex,
+FUN_008421da,178533,178549,,
+FUN_00842220,178549,178558,,
+FUN_00842310,178558,178570,CloseHandle,
+FUN_00842350,178570,178581,ReleaseMutex,
+FUN_00842380,178581,178595,WaitForSingleObject,
+FUN_008423c0,178595,178607,CloseHandle,
+FUN_008423f0,178607,178617,,
+FUN_00842420,178617,178641,SetFilePointer; WriteFile; GetLastError,
+FUN_00842490,178641,178659,SetFilePointer; ReadFile,
+FUN_008424f0,178659,178740,CloseHandle; OpenMutexW; InitializeSecurityDescriptor; SetSecurityDescriptorDacl; CreateMutexW; GetLastError; GetFileAttributesW; SetFileAttributesW; CreateFileW; GetFileSize,MUTEX_%s
+FUN_008427d0,178740,178753,SetFilePointer; SetEndOfFile,
+FUN_008429a0,178753,178789,SetFilePointer; GetFileSize; ReadFile; GetLastError,
+FUN_00842ae0,178789,178816,SetFilePointer; WriteFile; GetLastError,
+FUN_00843fa0,178816,178843,,
+FUN_008440f0,178843,178870,,
+FUN_008441d0,178870,178893,,
+FUN_008448f0,178893,178911,,
+FUN_008449b0,178911,178924,,
+FUN_008449f0,178924,178935,,
+FUN_00844a30,178935,178946,,
+FUN_00844aa0,178946,178957,,
+FUN_00844ad0,178957,178967,,
+FUN_00844b80,178967,178978,,
+FUN_00844bf0,178978,179085,,SQLITE_OK; SQLITE_ERROR; SQLITE_INTERNAL; SQLITE_PERM; SQLITE_ABORT; SQLITE_BUSY; SQLITE_LOCKED; SQLITE_NOMEM; SQLITE_READONLY; SQLITE_INTERRUPT; SQLITE_IOERR; SQLITE_CORRUPT; SQLITE_NOTFOUND; SQLITE_FULL; SQLITE_CANTOPEN; SQLITE_PROTOCOL; SQLITE_EMPTY; SQLITE_SCHEMA; SQLITE_TOOBIG; SQLITE_CONSTRAINT; SQLITE_MISMATCH; SQLITE_MISUSE; SQLITE_NOLFS; SQLITE_AUTH; SQLITE_FORMAT; SQLITE_RANGE; SQLITE_ROW; SQLITE_DONE; CPPSQLITE_ERROR; UNKNOWN_ERROR
+FUN_00844ea0,179085,179121,,%s[%d]: %s
+FUN_00844f70,179121,179136,__CxxThrowException_8,Null Virtual Machine pointer
+FUN_00844fb0,179136,179158,__CxxThrowException_8,
+FUN_00845030,179158,179183,__CxxThrowException_8,
+FUN_008450c0,179183,179192,,
+FUN_00845480,179192,179209,__CxxThrowException_8,Invalid field index requested
+FUN_008454e0,179209,179220,,
+FUN_00845500,179220,179238,,
+FUN_0084554b,179249,179271,,
+FUN_008455b0,179271,179290,,
+FUN_00845604,179301,179313,,
+FUN_00845620,179313,179328,__CxxThrowException_8,Null Virtual Machine pointer
+FUN_00845660,179328,179343,__CxxThrowException_8,Database not open
+FUN_008456a0,179343,179365,__CxxThrowException_8,
+FUN_00845710,179365,179386,__CxxThrowException_8,
+FUN_008458f0,179386,179404,__CxxThrowException_8,Error binding string param
+FUN_00845950,179404,179439,__CxxThrowException_8,
+FUN_00845b10,179439,179458,,
+FUN_00845b64,179469,179481,,
+FUN_00845b80,179481,179496,__CxxThrowException_8,Database not open
+FUN_00845bc0,179496,179518,__CxxThrowException_8,
+FUN_00845c30,179518,179538,__CxxThrowException_8,
+FUN_00845ca0,179538,179548,,
+FUN_00845d90,179548,179570,__CxxThrowException_8,
+FUN_00845e10,179570,179601,__CxxThrowException_8,
+FUN_00845ef0,179601,179626,__CxxThrowException_8,
+FUN_00845f80,179626,179641,,
+FUN_00845fd0,179641,179680,__CxxThrowException_8,Invalid scalar query
+FUN_00846090,179680,179696,,select count(*) from sqlite_master where type='table' and name='%s'

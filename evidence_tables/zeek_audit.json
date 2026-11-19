@@ -1,0 +1,327 @@
+{
+  "8": {
+    "dns": {
+      "rows": 537,
+      "keys": [
+        "AA",
+        "RA",
+        "RD",
+        "TC",
+        "Z",
+        "id.orig_h",
+        "id.orig_p",
+        "id.resp_h",
+        "id.resp_p",
+        "proto",
+        "qclass",
+        "qclass_name",
+        "qtype",
+        "qtype_name",
+        "query",
+        "rejected",
+        "trans_id",
+        "ts",
+        "uid"
+      ],
+      "queries": {
+        "desktop-mc9bsp9": 2,
+        "www.msftconnecttest.com": 75,
+        "ctldl.windowsupdate.com": 5,
+        "ecs.office.com": 20,
+        "mobile.events.data.microsoft.com": 25,
+        "1.100.168.192.in-addr.arpa": 10,
+        "2.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa": 10,
+        "250.255.255.239.in-addr.arpa": 10,
+        "255.100.168.192.in-addr.arpa": 10,
+        "dns.msftncsi.com": 51,
+        "update.googleapis.com": 10,
+        "-keyid-6aa18d784e13127ab179e682f3ff81828a181814-v2.microsoftaik.azure.net": 10,
+        "tas02.sls.update.microsoft.com": 15,
+        "*": 3,
+        "251.0.0.224.in-addr.arpa": 10,
+        "3.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa": 10,
+        "252.0.0.224.in-addr.arpa": 10,
+        "b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa": 10,
+        "fd.api.iris.microsoft.com": 5,
+        "config.edge.skype.com": 67,
+        "www.bing.com": 13,
+        "searchapp.bundleassets.example": 4,
+        "edge.microsoft.com": 8,
+        "www.msftncsi.com": 50,
+        "fs.microsoft.com": 5,
+        "watson.events.data.microsoft.com": 25,
+        "g.live.com": 33,
+        "settings-win.data.microsoft.com": 5,
+        "msedge.api.cdp.microsoft.com": 10,
+        "windows.msn.com": 11,
+        "v20.events.data.microsoft.com": 5
+      },
+      "response_codes": {
+        "absent": 537
+      }
+    },
+    "conn": {
+      "rows": 163,
+      "keys": [
+        "conn_state",
+        "duration",
+        "history",
+        "id.orig_h",
+        "id.orig_p",
+        "id.resp_h",
+        "id.resp_p",
+        "ip_proto",
+        "local_orig",
+        "local_resp",
+        "missed_bytes",
+        "orig_bytes",
+        "orig_ip_bytes",
+        "orig_pkts",
+        "proto",
+        "resp_bytes",
+        "resp_ip_bytes",
+        "resp_pkts",
+        "service",
+        "ts",
+        "uid"
+      ],
+      "services": {
+        "dns": 159,
+        "absent": 4
+      },
+      "destinations": {
+        "224.0.0.252:5355": 9,
+        "192.168.100.1:53": 148,
+        "192.168.100.255:137": 1,
+        "224.0.0.251:5353": 2,
+        "192.168.100.1:137": 1,
+        "224.0.0.22:0": 1,
+        "239.255.255.250:1900": 1
+      }
+    },
+    "packet_filter": {
+      "rows": 1,
+      "keys": [
+        "filter",
+        "init",
+        "node",
+        "success",
+        "ts"
+      ]
+    }
+  },
+  "9": {
+    "dns": {
+      "rows": 374,
+      "keys": [
+        "AA",
+        "RA",
+        "RD",
+        "TC",
+        "Z",
+        "id.orig_h",
+        "id.orig_p",
+        "id.resp_h",
+        "id.resp_p",
+        "proto",
+        "qclass",
+        "qclass_name",
+        "qtype",
+        "qtype_name",
+        "query",
+        "rejected",
+        "trans_id",
+        "ts",
+        "uid"
+      ],
+      "queries": {
+        "desktop-mc9bsp9": 2,
+        "www.msftconnecttest.com": 75,
+        "ctldl.windowsupdate.com": 5,
+        "ecs.office.com": 10,
+        "mobile.events.data.microsoft.com": 30,
+        "update.googleapis.com": 15,
+        "dns.msftncsi.com": 39,
+        "2.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa": 10,
+        "250.255.255.239.in-addr.arpa": 10,
+        "255.100.168.192.in-addr.arpa": 10,
+        "1.100.168.192.in-addr.arpa": 10,
+        "config.edge.skype.com": 36,
+        "www.bing.com": 8,
+        "-keyid-6aa18d784e13127ab179e682f3ff81828a181814-v2.microsoftaik.azure.net": 5,
+        "searchapp.bundleassets.example": 4,
+        "fd.api.iris.microsoft.com": 5,
+        "*": 3,
+        "252.0.0.224.in-addr.arpa": 10,
+        "3.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa": 10,
+        "251.0.0.224.in-addr.arpa": 10,
+        "b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa": 10,
+        "edge.microsoft.com": 13,
+        "msedge.api.cdp.microsoft.com": 5,
+        "www.msftncsi.com": 14,
+        "fs.microsoft.com": 5,
+        "watson.events.data.microsoft.com": 20
+      },
+      "response_codes": {
+        "absent": 374
+      }
+    },
+    "conn": {
+      "rows": 111,
+      "keys": [
+        "conn_state",
+        "duration",
+        "history",
+        "id.orig_h",
+        "id.orig_p",
+        "id.resp_h",
+        "id.resp_p",
+        "ip_proto",
+        "local_orig",
+        "local_resp",
+        "missed_bytes",
+        "orig_bytes",
+        "orig_ip_bytes",
+        "orig_pkts",
+        "proto",
+        "resp_bytes",
+        "resp_ip_bytes",
+        "resp_pkts",
+        "service",
+        "ts",
+        "uid"
+      ],
+      "services": {
+        "dns": 108,
+        "absent": 3
+      },
+      "destinations": {
+        "224.0.0.252:5355": 9,
+        "192.168.100.1:53": 96,
+        "192.168.100.255:137": 1,
+        "224.0.0.251:5353": 2,
+        "192.168.100.1:137": 1,
+        "224.0.0.22:0": 1,
+        "239.255.255.250:1900": 1
+      }
+    },
+    "packet_filter": {
+      "rows": 1,
+      "keys": [
+        "filter",
+        "init",
+        "node",
+        "success",
+        "ts"
+      ]
+    }
+  },
+  "13": {
+    "dns": {
+      "rows": 401,
+      "keys": [
+        "AA",
+        "RA",
+        "RD",
+        "TC",
+        "Z",
+        "id.orig_h",
+        "id.orig_p",
+        "id.resp_h",
+        "id.resp_p",
+        "proto",
+        "qclass",
+        "qclass_name",
+        "qtype",
+        "qtype_name",
+        "query",
+        "rejected",
+        "trans_id",
+        "ts",
+        "uid"
+      ],
+      "queries": {
+        "desktop-mc9bsp9": 2,
+        "www.msftconnecttest.com": 75,
+        "ctldl.windowsupdate.com": 10,
+        "ecs.office.com": 10,
+        "mobile.events.data.microsoft.com": 35,
+        "2.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa": 10,
+        "255.100.168.192.in-addr.arpa": 10,
+        "1.100.168.192.in-addr.arpa": 10,
+        "250.255.255.239.in-addr.arpa": 10,
+        "config.edge.skype.com": 41,
+        "www.bing.com": 13,
+        "dns.msftncsi.com": 35,
+        "update.googleapis.com": 15,
+        "fd.api.iris.microsoft.com": 5,
+        "*": 3,
+        "251.0.0.224.in-addr.arpa": 10,
+        "b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa": 10,
+        "3.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa": 10,
+        "252.0.0.224.in-addr.arpa": 10,
+        "tas02.sls.update.microsoft.com": 5,
+        "searchapp.bundleassets.example": 4,
+        "edge.microsoft.com": 8,
+        "fs.microsoft.com": 10,
+        "www.msftncsi.com": 10,
+        "watson.events.data.microsoft.com": 15,
+        "settings-win.data.microsoft.com": 5,
+        "g.live.com": 10,
+        "msedge.api.cdp.microsoft.com": 10
+      },
+      "response_codes": {
+        "absent": 401
+      }
+    },
+    "conn": {
+      "rows": 115,
+      "keys": [
+        "conn_state",
+        "duration",
+        "history",
+        "id.orig_h",
+        "id.orig_p",
+        "id.resp_h",
+        "id.resp_p",
+        "ip_proto",
+        "local_orig",
+        "local_resp",
+        "missed_bytes",
+        "orig_bytes",
+        "orig_ip_bytes",
+        "orig_pkts",
+        "proto",
+        "resp_bytes",
+        "resp_ip_bytes",
+        "resp_pkts",
+        "service",
+        "ts",
+        "uid"
+      ],
+      "services": {
+        "dns": 112,
+        "absent": 3
+      },
+      "destinations": {
+        "224.0.0.252:5355": 9,
+        "192.168.100.255:137": 1,
+        "192.168.100.1:53": 101,
+        "192.168.100.1:137": 1,
+        "224.0.0.251:5353": 1,
+        "224.0.0.22:0": 1,
+        "239.255.255.250:1900": 1
+      }
+    },
+    "packet_filter": {
+      "rows": 1,
+      "keys": [
+        "filter",
+        "init",
+        "node",
+        "success",
+        "ts"
+      ]
+    }
+  }
+}

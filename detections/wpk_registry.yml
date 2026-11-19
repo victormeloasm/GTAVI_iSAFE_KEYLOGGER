@@ -1,0 +1,20 @@
+title: iSafe WPK Policy Run Persistence
+id: b842738f-e8c5-43bc-91a8-8a8b5379a2b5
+status: experimental
+description: Matches the MSI-declared iSafe policy Run value and this case's executable path.
+author: Forensic reconstruction prepared for Porquinho
+date: 2026-11-19
+logsource:
+  product: windows
+  category: registry_set
+detection:
+  selection:
+    TargetObject|endswith: '\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run\iSafe'
+    Details|contains: '\windows-systempro\WPK.exe'
+  condition: selection
+falsepositives:
+  - Authorized deployments of the same commercial monitoring application
+level: high
+tags:
+  - attack.persistence
+  - attack.t1547.001

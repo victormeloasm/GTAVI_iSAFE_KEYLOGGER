@@ -1,0 +1,2440 @@
+{
+  "_Validation": [
+    {
+      "Table": "_Validation",
+      "Column": "Table",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Name of table"
+    },
+    {
+      "Table": "_Validation",
+      "Column": "Column",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Name of column"
+    },
+    {
+      "Table": "_Validation",
+      "Column": "Description",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Text",
+      "Set": "",
+      "Description": "Description of column"
+    },
+    {
+      "Table": "_Validation",
+      "Column": "Set",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Text",
+      "Set": "",
+      "Description": "Set of values that are permitted"
+    },
+    {
+      "Table": "_Validation",
+      "Column": "Category",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "Text;Formatted;Template;Condition;Guid;Path;Version;Language;Identifier;Binary;UpperCase;LowerCase;Filename;Paths;AnyPath;WildCardFilename;RegPath;CustomSource;Property;Cabinet;Shortcut;FormattedSDDLText;Integer;DoubleInteger;TimeDate;DefaultDir",
+      "Description": "String category"
+    },
+    {
+      "Table": "_Validation",
+      "Column": "KeyColumn",
+      "Nullable": "Y",
+      "MinValue": 1,
+      "MaxValue": 32,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Column to which foreign key connects"
+    },
+    {
+      "Table": "_Validation",
+      "Column": "MaxValue",
+      "Nullable": "Y",
+      "MinValue": -2147483647,
+      "MaxValue": 2147483647,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Maximum value allowed"
+    },
+    {
+      "Table": "_Validation",
+      "Column": "Nullable",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "Y;N",
+      "Description": "Whether the column is nullable"
+    },
+    {
+      "Table": "_Validation",
+      "Column": "KeyTable",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "For foreign key, Name of table to which data must link"
+    },
+    {
+      "Table": "_Validation",
+      "Column": "MinValue",
+      "Nullable": "Y",
+      "MinValue": -2147483647,
+      "MaxValue": 2147483647,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Minimum value allowed"
+    },
+    {
+      "Table": "_SummaryInformation",
+      "Column": "Value",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": ""
+    },
+    {
+      "Table": "_SummaryInformation",
+      "Column": "PropertyId",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": ""
+    },
+    {
+      "Table": "AdminExecuteSequence",
+      "Column": "Action",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Name of action to invoke, either in the engine or the handler DLL."
+    },
+    {
+      "Table": "AdminExecuteSequence",
+      "Column": "Condition",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Condition",
+      "Set": "",
+      "Description": "Optional expression which skips the action if evaluates to expFalse.If the expression syntax is invalid, the engine will terminate, returning iesBadActionData."
+    },
+    {
+      "Table": "AdminExecuteSequence",
+      "Column": "Sequence",
+      "Nullable": "Y",
+      "MinValue": -4,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Number that determines the sort order in which the actions are to be executed.  Leave blank to suppress action."
+    },
+    {
+      "Table": "AdminUISequence",
+      "Column": "Action",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Name of action to invoke, either in the engine or the handler DLL."
+    },
+    {
+      "Table": "AdminUISequence",
+      "Column": "Condition",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Condition",
+      "Set": "",
+      "Description": "Optional expression which skips the action if evaluates to expFalse.If the expression syntax is invalid, the engine will terminate, returning iesBadActionData."
+    },
+    {
+      "Table": "AdminUISequence",
+      "Column": "Sequence",
+      "Nullable": "Y",
+      "MinValue": -4,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Number that determines the sort order in which the actions are to be executed.  Leave blank to suppress action."
+    },
+    {
+      "Table": "AdvtExecuteSequence",
+      "Column": "Action",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Name of action to invoke, either in the engine or the handler DLL."
+    },
+    {
+      "Table": "AdvtExecuteSequence",
+      "Column": "Condition",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Condition",
+      "Set": "",
+      "Description": "Optional expression which skips the action if evaluates to expFalse.If the expression syntax is invalid, the engine will terminate, returning iesBadActionData."
+    },
+    {
+      "Table": "AdvtExecuteSequence",
+      "Column": "Sequence",
+      "Nullable": "Y",
+      "MinValue": -4,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Number that determines the sort order in which the actions are to be executed.  Leave blank to suppress action."
+    },
+    {
+      "Table": "Component",
+      "Column": "Condition",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Condition",
+      "Set": "",
+      "Description": "A conditional statement that will disable this component if the specified condition evaluates to the 'True' state. If a component is disabled, it will not be installed, regardless of the 'Action' state associated with the component."
+    },
+    {
+      "Table": "Component",
+      "Column": "Component",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Primary key used to identify a particular component record."
+    },
+    {
+      "Table": "Component",
+      "Column": "ComponentId",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Guid",
+      "Set": "",
+      "Description": "A string GUID unique to this component, version, and language."
+    },
+    {
+      "Table": "Component",
+      "Column": "Directory_",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Directory",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Required key of a Directory table record. This is actually a property name whose value contains the actual path, set either by the AppSearch action or with the default setting obtained from the Directory table."
+    },
+    {
+      "Table": "Component",
+      "Column": "Attributes",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Remote execution option, one of irsEnum"
+    },
+    {
+      "Table": "Component",
+      "Column": "KeyPath",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "File;Registry;ODBCDataSource",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Either the primary key into the File table, Registry table, or ODBCDataSource table. This extract path is stored when the component is installed, and is used to detect the presence of the component and to return the path to it."
+    },
+    {
+      "Table": "Directory",
+      "Column": "Directory",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Unique identifier for directory entry, primary key. If a property by this name is defined, it contains the full path to the directory."
+    },
+    {
+      "Table": "Directory",
+      "Column": "Directory_Parent",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Directory",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Reference to the entry in this table specifying the default parent directory. A record parented to itself or with a Null parent represents a root of the install tree."
+    },
+    {
+      "Table": "Directory",
+      "Column": "DefaultDir",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "DefaultDir",
+      "Set": "",
+      "Description": "The default sub-path under parent's path."
+    },
+    {
+      "Table": "CreateFolder",
+      "Column": "Directory_",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Directory",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Primary key, could be foreign key into the Directory table."
+    },
+    {
+      "Table": "CreateFolder",
+      "Column": "Component_",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Component",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Foreign key into the Component table."
+    },
+    {
+      "Table": "CustomAction",
+      "Column": "Type",
+      "Nullable": "N",
+      "MinValue": 1,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "The numeric custom action type, consisting of source location, code type, entry, option flags."
+    },
+    {
+      "Table": "CustomAction",
+      "Column": "Action",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Primary key, name of action, normally appears in sequence table unless private use."
+    },
+    {
+      "Table": "CustomAction",
+      "Column": "Source",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "CustomSource",
+      "Set": "",
+      "Description": "The table reference of the source of the code."
+    },
+    {
+      "Table": "CustomAction",
+      "Column": "Target",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Formatted",
+      "Set": "",
+      "Description": "Excecution parameter, depends on the type of custom action"
+    },
+    {
+      "Table": "CustomAction",
+      "Column": "ExtendedType",
+      "Nullable": "Y",
+      "MinValue": 0,
+      "MaxValue": 2147483647,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "A numeric custom action type that extends code type or option flags of the Type column."
+    },
+    {
+      "Table": "Feature",
+      "Column": "Description",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Text",
+      "Set": "",
+      "Description": "Longer descriptive text describing a visible feature item."
+    },
+    {
+      "Table": "Feature",
+      "Column": "Directory_",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Directory",
+      "KeyColumn": 1,
+      "Category": "UpperCase",
+      "Set": "",
+      "Description": "The name of the Directory that can be configured by the UI. A non-null value will enable the browse button."
+    },
+    {
+      "Table": "Feature",
+      "Column": "Attributes",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "0;1;2;4;5;6;8;9;10;16;17;18;20;21;22;24;25;26;32;33;34;36;37;38;48;49;50;52;53;54",
+      "Description": "Feature attributes"
+    },
+    {
+      "Table": "Feature",
+      "Column": "Feature",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Primary key used to identify a particular feature record."
+    },
+    {
+      "Table": "Feature",
+      "Column": "Feature_Parent",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Feature",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Optional key of a parent record in the same table. If the parent is not selected, then the record will not be installed. Null indicates a root item."
+    },
+    {
+      "Table": "Feature",
+      "Column": "Title",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Text",
+      "Set": "",
+      "Description": "Short text identifying a visible feature item."
+    },
+    {
+      "Table": "Feature",
+      "Column": "Display",
+      "Nullable": "Y",
+      "MinValue": 0,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Numeric sort order, used to force a specific display ordering."
+    },
+    {
+      "Table": "Feature",
+      "Column": "Level",
+      "Nullable": "N",
+      "MinValue": 0,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "The install level at which record will be initially selected. An install level of 0 will disable an item and prevent its display."
+    },
+    {
+      "Table": "FeatureComponents",
+      "Column": "Component_",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Component",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Foreign key into Component table."
+    },
+    {
+      "Table": "FeatureComponents",
+      "Column": "Feature_",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Feature",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Foreign key into Feature table."
+    },
+    {
+      "Table": "File",
+      "Column": "Sequence",
+      "Nullable": "N",
+      "MinValue": 1,
+      "MaxValue": 2147483647,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Sequence with respect to the media images; order must track cabinet order."
+    },
+    {
+      "Table": "File",
+      "Column": "Attributes",
+      "Nullable": "Y",
+      "MinValue": 0,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Integer containing bit flags representing file attributes (with the decimal value of each bit position in parentheses)"
+    },
+    {
+      "Table": "File",
+      "Column": "Component_",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Component",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Foreign key referencing Component that controls the file."
+    },
+    {
+      "Table": "File",
+      "Column": "File",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Primary key, non-localized token, must match identifier in cabinet.  For uncompressed files, this field is ignored."
+    },
+    {
+      "Table": "File",
+      "Column": "FileName",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Filename",
+      "Set": "",
+      "Description": "File name used for installation, may be localized.  This may contain a \"short name|long name\" pair."
+    },
+    {
+      "Table": "File",
+      "Column": "FileSize",
+      "Nullable": "N",
+      "MinValue": 0,
+      "MaxValue": 2147483647,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Size of file in bytes (long integer)."
+    },
+    {
+      "Table": "File",
+      "Column": "Version",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "File",
+      "KeyColumn": 1,
+      "Category": "Version",
+      "Set": "",
+      "Description": "Version string for versioned files;  Blank for unversioned files."
+    },
+    {
+      "Table": "File",
+      "Column": "Language",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Language",
+      "Set": "",
+      "Description": "List of decimal language Ids, comma-separated if more than one."
+    },
+    {
+      "Table": "InstallExecuteSequence",
+      "Column": "Action",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Name of action to invoke, either in the engine or the handler DLL."
+    },
+    {
+      "Table": "InstallExecuteSequence",
+      "Column": "Condition",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Condition",
+      "Set": "",
+      "Description": "Optional expression which skips the action if evaluates to expFalse.If the expression syntax is invalid, the engine will terminate, returning iesBadActionData."
+    },
+    {
+      "Table": "InstallExecuteSequence",
+      "Column": "Sequence",
+      "Nullable": "Y",
+      "MinValue": -4,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Number that determines the sort order in which the actions are to be executed.  Leave blank to suppress action."
+    },
+    {
+      "Table": "InstallUISequence",
+      "Column": "Action",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Name of action to invoke, either in the engine or the handler DLL."
+    },
+    {
+      "Table": "InstallUISequence",
+      "Column": "Condition",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Condition",
+      "Set": "",
+      "Description": "Optional expression which skips the action if evaluates to expFalse.If the expression syntax is invalid, the engine will terminate, returning iesBadActionData."
+    },
+    {
+      "Table": "InstallUISequence",
+      "Column": "Sequence",
+      "Nullable": "Y",
+      "MinValue": -4,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Number that determines the sort order in which the actions are to be executed.  Leave blank to suppress action."
+    },
+    {
+      "Table": "Media",
+      "Column": "Source",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Property",
+      "Set": "",
+      "Description": "The property defining the location of the cabinet file."
+    },
+    {
+      "Table": "Media",
+      "Column": "DiskId",
+      "Nullable": "N",
+      "MinValue": 1,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Primary key, integer to determine sort order for table."
+    },
+    {
+      "Table": "Media",
+      "Column": "LastSequence",
+      "Nullable": "N",
+      "MinValue": 0,
+      "MaxValue": 2147483647,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "File sequence number for the last file for this media."
+    },
+    {
+      "Table": "Media",
+      "Column": "DiskPrompt",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Text",
+      "Set": "",
+      "Description": "Disk name: the visible text actually printed on the disk.  This will be used to prompt the user when this disk needs to be inserted."
+    },
+    {
+      "Table": "Media",
+      "Column": "Cabinet",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Cabinet",
+      "Set": "",
+      "Description": "If some or all of the files stored on the media are compressed in a cabinet, the name of that cabinet."
+    },
+    {
+      "Table": "Media",
+      "Column": "VolumeLabel",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Text",
+      "Set": "",
+      "Description": "The label attributed to the volume."
+    },
+    {
+      "Table": "Property",
+      "Column": "Value",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Text",
+      "Set": "",
+      "Description": "String value for property.  Never null or empty."
+    },
+    {
+      "Table": "Property",
+      "Column": "Property",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Name of property, uppercase if settable by launcher or loader."
+    },
+    {
+      "Table": "MsiFileHash",
+      "Column": "File_",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "File",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Primary key, foreign key into File table referencing file with this hash"
+    },
+    {
+      "Table": "MsiFileHash",
+      "Column": "Options",
+      "Nullable": "N",
+      "MinValue": 0,
+      "MaxValue": 32767,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Various options and attributes for this hash."
+    },
+    {
+      "Table": "MsiFileHash",
+      "Column": "HashPart1",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Size of file in bytes (long integer)."
+    },
+    {
+      "Table": "MsiFileHash",
+      "Column": "HashPart2",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Size of file in bytes (long integer)."
+    },
+    {
+      "Table": "MsiFileHash",
+      "Column": "HashPart3",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Size of file in bytes (long integer)."
+    },
+    {
+      "Table": "MsiFileHash",
+      "Column": "HashPart4",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "Size of file in bytes (long integer)."
+    },
+    {
+      "Table": "Registry",
+      "Column": "Name",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Formatted",
+      "Set": "",
+      "Description": "The registry value name."
+    },
+    {
+      "Table": "Registry",
+      "Column": "Value",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Formatted",
+      "Set": "",
+      "Description": "The registry value."
+    },
+    {
+      "Table": "Registry",
+      "Column": "Component_",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Component",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Foreign key into the Component table referencing component that controls the installing of the registry value."
+    },
+    {
+      "Table": "Registry",
+      "Column": "Registry",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Primary key, non-localized token."
+    },
+    {
+      "Table": "Registry",
+      "Column": "Root",
+      "Nullable": "N",
+      "MinValue": -1,
+      "MaxValue": 3,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "The predefined root key for the registry value, one of rrkEnum."
+    },
+    {
+      "Table": "Registry",
+      "Column": "Key",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "RegPath",
+      "Set": "",
+      "Description": "The key for the registry value."
+    },
+    {
+      "Table": "RemoveFile",
+      "Column": "Component_",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "Component",
+      "KeyColumn": 1,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Foreign key referencing Component that controls the file to be removed."
+    },
+    {
+      "Table": "RemoveFile",
+      "Column": "FileName",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "WildCardFilename",
+      "Set": "",
+      "Description": "Name of the file to be removed."
+    },
+    {
+      "Table": "RemoveFile",
+      "Column": "FileKey",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Primary key used to identify a particular file entry"
+    },
+    {
+      "Table": "RemoveFile",
+      "Column": "DirProperty",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Identifier",
+      "Set": "",
+      "Description": "Name of a property whose value is assumed to resolve to the full pathname to the folder of the file to be removed."
+    },
+    {
+      "Table": "RemoveFile",
+      "Column": "InstallMode",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "1;2;3",
+      "Description": "Installation option, one of iimEnum."
+    },
+    {
+      "Table": "Upgrade",
+      "Column": "Attributes",
+      "Nullable": "N",
+      "MinValue": 0,
+      "MaxValue": 2147483647,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "",
+      "Set": "",
+      "Description": "The attributes of this product set."
+    },
+    {
+      "Table": "Upgrade",
+      "Column": "Language",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Language",
+      "Set": "",
+      "Description": "A comma-separated list of languages for either products in this set or products not in this set."
+    },
+    {
+      "Table": "Upgrade",
+      "Column": "UpgradeCode",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Guid",
+      "Set": "",
+      "Description": "The UpgradeCode GUID belonging to the products in this set."
+    },
+    {
+      "Table": "Upgrade",
+      "Column": "VersionMin",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Text",
+      "Set": "",
+      "Description": "The minimum ProductVersion of the products in this set.  The set may or may not include products with this particular version."
+    },
+    {
+      "Table": "Upgrade",
+      "Column": "VersionMax",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Text",
+      "Set": "",
+      "Description": "The maximum ProductVersion of the products in this set.  The set may or may not include products with this particular version."
+    },
+    {
+      "Table": "Upgrade",
+      "Column": "Remove",
+      "Nullable": "Y",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "Formatted",
+      "Set": "",
+      "Description": "The list of features to remove when uninstalling a product from this set.  The default is \"ALL\"."
+    },
+    {
+      "Table": "Upgrade",
+      "Column": "ActionProperty",
+      "Nullable": "N",
+      "MinValue": null,
+      "MaxValue": null,
+      "KeyTable": "",
+      "KeyColumn": null,
+      "Category": "UpperCase",
+      "Set": "",
+      "Description": "The property to set when a product in this set is found."
+    }
+  ],
+  "AdminExecuteSequence": [
+    {
+      "Action": "CostInitialize",
+      "Condition": "",
+      "Sequence": 800
+    },
+    {
+      "Action": "FileCost",
+      "Condition": "",
+      "Sequence": 900
+    },
+    {
+      "Action": "CostFinalize",
+      "Condition": "",
+      "Sequence": 1000
+    },
+    {
+      "Action": "InstallValidate",
+      "Condition": "",
+      "Sequence": 1400
+    },
+    {
+      "Action": "InstallInitialize",
+      "Condition": "",
+      "Sequence": 1500
+    },
+    {
+      "Action": "InstallAdminPackage",
+      "Condition": "",
+      "Sequence": 3900
+    },
+    {
+      "Action": "InstallFiles",
+      "Condition": "",
+      "Sequence": 4000
+    },
+    {
+      "Action": "InstallFinalize",
+      "Condition": "",
+      "Sequence": 6600
+    }
+  ],
+  "AdminUISequence": [
+    {
+      "Action": "CostInitialize",
+      "Condition": "",
+      "Sequence": 800
+    },
+    {
+      "Action": "FileCost",
+      "Condition": "",
+      "Sequence": 900
+    },
+    {
+      "Action": "CostFinalize",
+      "Condition": "",
+      "Sequence": 1000
+    },
+    {
+      "Action": "ExecuteAction",
+      "Condition": "",
+      "Sequence": 1300
+    }
+  ],
+  "AdvtExecuteSequence": [
+    {
+      "Action": "CostInitialize",
+      "Condition": "",
+      "Sequence": 800
+    },
+    {
+      "Action": "CostFinalize",
+      "Condition": "",
+      "Sequence": 1000
+    },
+    {
+      "Action": "InstallValidate",
+      "Condition": "",
+      "Sequence": 1400
+    },
+    {
+      "Action": "InstallInitialize",
+      "Condition": "",
+      "Sequence": 1500
+    },
+    {
+      "Action": "InstallFinalize",
+      "Condition": "",
+      "Sequence": 6600
+    },
+    {
+      "Action": "PublishFeatures",
+      "Condition": "",
+      "Sequence": 6300
+    },
+    {
+      "Action": "PublishProduct",
+      "Condition": "",
+      "Sequence": 6400
+    }
+  ],
+  "Component": [
+    {
+      "Component": "Component.CommonAppDataFolder",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AF54DEBD8}",
+      "Directory_": "CommonAppDataFolder",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": ""
+    },
+    {
+      "Component": "Component.INSTALLDIR",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A6A2B1D7A}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": ""
+    },
+    {
+      "Component": "Component.curllib.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A3B6ABE1A}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "curllib.dll"
+    },
+    {
+      "Component": "Component.df.exe",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AE5DB71A2}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "df.exe"
+    },
+    {
+      "Component": "Component.FltEng.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A0956CDE9}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "FltEng.dll"
+    },
+    {
+      "Component": "Component.IMME.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A1E5E3D0E}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "IMME.dll"
+    },
+    {
+      "Component": "Component.IMME64.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A17AFBEF4}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "IMME64.dll"
+    },
+    {
+      "Component": "Component.libeay32.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AE42126EA}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "libeay32.dll"
+    },
+    {
+      "Component": "Component.libsasl.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AE371E451}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "libsasl.dll"
+    },
+    {
+      "Component": "Component.mfc90u.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A77EC65EF}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "mfc90u.dll"
+    },
+    {
+      "Component": "Component.Microsoft.VC90.CRT.manifest",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A9EBD97EC}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "Microsoft.VC90.CRT.manifest"
+    },
+    {
+      "Component": "Component.Microsoft.VC90.MFC.manifest",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A03BDAD48}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "Microsoft.VC90.MFC.manifest"
+    },
+    {
+      "Component": "Component.msvcp90.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4ACB8D49E6}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "msvcp90.dll"
+    },
+    {
+      "Component": "Component.msvcr90.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A0E74A75C}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "msvcr90.dll"
+    },
+    {
+      "Component": "Component.openldap.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A88DFAA3C}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "openldap.dll"
+    },
+    {
+      "Component": "Component.SecPro.exe",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A6326321F}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "SecPro.exe"
+    },
+    {
+      "Component": "Component.ssleay32.dll",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A7C0CDD48}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "ssleay32.dll"
+    },
+    {
+      "Component": "Component.SvcControl.exe",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AA94EF703}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "SvcControl.exe"
+    },
+    {
+      "Component": "Component.WPK.exe",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A212490A0}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "WPK.exe"
+    },
+    {
+      "Component": "Component.WPK64.exe",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AF27016F0}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "WPK64.exe"
+    },
+    {
+      "Component": "Component.wpkr.exe",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AA1187BA2}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "wpkr.exe"
+    },
+    {
+      "Component": "Component.wpkun.bin",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A703AD6DA}",
+      "Directory_": "INSTALLDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "wpkun.bin"
+    },
+    {
+      "Component": "Registry1",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A340C6FDF}",
+      "Directory_": "CommonAppDataFolder",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": ""
+    },
+    {
+      "Component": "Registry2",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A340C6FE2}",
+      "Directory_": "CommonAppDataFolder",
+      "Attributes": 4,
+      "Condition": "",
+      "KeyPath": "iSafe"
+    },
+    {
+      "Component": "Registry3",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A340C6FE1}",
+      "Directory_": "CommonAppDataFolder",
+      "Attributes": 4,
+      "Condition": "",
+      "KeyPath": "RegValue.1"
+    },
+    {
+      "Component": "Registry4",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A340C6FDC}",
+      "Directory_": "CommonAppDataFolder",
+      "Attributes": 4,
+      "Condition": "",
+      "KeyPath": "LoginDat"
+    },
+    {
+      "Component": "Component.WindowsVolume",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A68CD0F1A}",
+      "Directory_": "WindowsVolume",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": ""
+    },
+    {
+      "Component": "Component.Users",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A2329CB0B}",
+      "Directory_": "WindowsVolume.Users",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": ""
+    },
+    {
+      "Component": "Component.Public",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AE47B8035}",
+      "Directory_": "WindowsVolume.Users.Public",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": ""
+    },
+    {
+      "Component": "Component.L001_",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AD397F0F5}",
+      "Directory_": "WindowsVolume.Users.Public.L001",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": ""
+    },
+    {
+      "Component": "Component.subcfg",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AA1515BE1}",
+      "Directory_": "WindowsVolume.Users.Public.L001",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "subcfg"
+    },
+    {
+      "Component": "Component.W0000_",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AF73440D9}",
+      "Directory_": "WindowsVolume.Users.Public.L001",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "W0000_"
+    },
+    {
+      "Component": "Component.W0002_",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AB1E557A3}",
+      "Directory_": "WindowsVolume.Users.Public.L001",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "W0002_"
+    },
+    {
+      "Component": "Component.W0003_",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4A0F3EE208}",
+      "Directory_": "WindowsVolume.Users.Public.L001",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": "W0003_"
+    },
+    {
+      "Component": "TempFolder.EmptyDirectory",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AFD1F7274}",
+      "Directory_": "TempFolder",
+      "Attributes": 4,
+      "Condition": "",
+      "KeyPath": "reg579EC8DF028069C30646A4022E297FB6"
+    },
+    {
+      "Component": "TARGETDIR",
+      "ComponentId": "{8CC301C3-0636-45A8-BEA3-FC4AAAD011CA}",
+      "Directory_": "TARGETDIR",
+      "Attributes": 0,
+      "Condition": "",
+      "KeyPath": ""
+    }
+  ],
+  "Directory": [
+    {
+      "Directory": "CommonAppDataFolder",
+      "Directory_Parent": "TARGETDIR",
+      "DefaultDir": "yhcj5x6n|CommonAppDataFolder"
+    },
+    {
+      "Directory": "INSTALLDIR",
+      "Directory_Parent": "CommonAppDataFolder",
+      "DefaultDir": "yyv0qot4|windows-systempro"
+    },
+    {
+      "Directory": "WindowsVolume",
+      "Directory_Parent": "TARGETDIR",
+      "DefaultDir": "v6218sre|WindowsVolume"
+    },
+    {
+      "Directory": "WindowsVolume.Users",
+      "Directory_Parent": "WindowsVolume",
+      "DefaultDir": "Users"
+    },
+    {
+      "Directory": "WindowsVolume.Users.Public",
+      "Directory_Parent": "WindowsVolume.Users",
+      "DefaultDir": "Public"
+    },
+    {
+      "Directory": "WindowsVolume.Users.Public.L001",
+      "Directory_Parent": "WindowsVolume.Users.Public",
+      "DefaultDir": "L001"
+    },
+    {
+      "Directory": "TempFolder",
+      "Directory_Parent": "TARGETDIR",
+      "DefaultDir": "t19mu-pt|TempFolder"
+    },
+    {
+      "Directory": "TARGETDIR",
+      "Directory_Parent": "",
+      "DefaultDir": "SourceDir"
+    }
+  ],
+  "CreateFolder": [
+    {
+      "Directory_": "CommonAppDataFolder",
+      "Component_": "Component.CommonAppDataFolder"
+    },
+    {
+      "Directory_": "CommonAppDataFolder",
+      "Component_": "Registry1"
+    },
+    {
+      "Directory_": "CommonAppDataFolder",
+      "Component_": "Registry2"
+    },
+    {
+      "Directory_": "CommonAppDataFolder",
+      "Component_": "Registry3"
+    },
+    {
+      "Directory_": "CommonAppDataFolder",
+      "Component_": "Registry4"
+    },
+    {
+      "Directory_": "INSTALLDIR",
+      "Component_": "Component.INSTALLDIR"
+    },
+    {
+      "Directory_": "WindowsVolume",
+      "Component_": "Component.WindowsVolume"
+    },
+    {
+      "Directory_": "WindowsVolume.Users",
+      "Component_": "Component.Users"
+    },
+    {
+      "Directory_": "WindowsVolume.Users.Public",
+      "Component_": "Component.Public"
+    },
+    {
+      "Directory_": "WindowsVolume.Users.Public.L001",
+      "Component_": "Component.L001_"
+    },
+    {
+      "Directory_": "TempFolder",
+      "Component_": "TempFolder.EmptyDirectory"
+    },
+    {
+      "Directory_": "TARGETDIR",
+      "Component_": "TARGETDIR"
+    }
+  ],
+  "CustomAction": [
+    {
+      "Action": "Action1_WPK.exe",
+      "Type": 1234,
+      "Source": "WPK.exe",
+      "Target": "",
+      "ExtendedType": null
+    },
+    {
+      "Action": "PreventDowngrading",
+      "Type": 19,
+      "Source": "",
+      "Target": "Newer version already installed",
+      "ExtendedType": null
+    }
+  ],
+  "Feature": [
+    {
+      "Feature": "system_windows_AI",
+      "Feature_Parent": "",
+      "Title": "system windows AI",
+      "Description": "system windows AI",
+      "Display": 2,
+      "Level": 1,
+      "Directory_": "",
+      "Attributes": 16
+    }
+  ],
+  "FeatureComponents": [
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.CommonAppDataFolder"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.INSTALLDIR"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.curllib.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.df.exe"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.FltEng.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.IMME.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.IMME64.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.libeay32.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.libsasl.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.mfc90u.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.Microsoft.VC90.CRT.manifest"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.Microsoft.VC90.MFC.manifest"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.msvcp90.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.msvcr90.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.openldap.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.SecPro.exe"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.ssleay32.dll"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.SvcControl.exe"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.WPK.exe"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.WPK64.exe"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.wpkr.exe"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.wpkun.bin"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Registry1"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Registry2"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Registry3"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Registry4"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.WindowsVolume"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.Users"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.Public"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.L001_"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.subcfg"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.W0000_"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.W0002_"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "Component.W0003_"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "TempFolder.EmptyDirectory"
+    },
+    {
+      "Feature_": "system_windows_AI",
+      "Component_": "TARGETDIR"
+    }
+  ],
+  "File": [
+    {
+      "File": "curllib.dll",
+      "Component_": "Component.curllib.dll",
+      "FileName": "curllib.dll",
+      "FileSize": 194048,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 1
+    },
+    {
+      "File": "df.exe",
+      "Component_": "Component.df.exe",
+      "FileName": "df.exe",
+      "FileSize": 252416,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 2
+    },
+    {
+      "File": "FltEng.dll",
+      "Component_": "Component.FltEng.dll",
+      "FileName": "FltEng.dll",
+      "FileSize": 235008,
+      "Version": "1.0.0.1",
+      "Language": "1033",
+      "Attributes": 512,
+      "Sequence": 3
+    },
+    {
+      "File": "IMME.dll",
+      "Component_": "Component.IMME.dll",
+      "FileName": "IMME.dll",
+      "FileSize": 78336,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 4
+    },
+    {
+      "File": "IMME64.dll",
+      "Component_": "Component.IMME64.dll",
+      "FileName": "IMME64.dll",
+      "FileSize": 66048,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 5
+    },
+    {
+      "File": "libeay32.dll",
+      "Component_": "Component.libeay32.dll",
+      "FileName": "libeay32.dll",
+      "FileSize": 1016832,
+      "Version": "0.9.8.10",
+      "Language": "1033",
+      "Attributes": 512,
+      "Sequence": 6
+    },
+    {
+      "File": "libsasl.dll",
+      "Component_": "Component.libsasl.dll",
+      "FileName": "libsasl.dll",
+      "FileSize": 198656,
+      "Version": "2.1.25.0",
+      "Language": "1033",
+      "Attributes": 512,
+      "Sequence": 7
+    },
+    {
+      "File": "mfc90u.dll",
+      "Component_": "Component.mfc90u.dll",
+      "FileName": "mfc90u.dll",
+      "FileSize": 3780424,
+      "Version": "9.0.30729.4148",
+      "Language": "1033",
+      "Attributes": 512,
+      "Sequence": 8
+    },
+    {
+      "File": "Microsoft.VC90.CRT.manifest",
+      "Component_": "Component.Microsoft.VC90.CRT.manifest",
+      "FileName": "srvo7aun.man|Microsoft.VC90.CRT.manifest",
+      "FileSize": 1857,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 9
+    },
+    {
+      "File": "Microsoft.VC90.MFC.manifest",
+      "Component_": "Component.Microsoft.VC90.MFC.manifest",
+      "FileName": "v0wcyx3n.man|Microsoft.VC90.MFC.manifest",
+      "FileSize": 2354,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 10
+    },
+    {
+      "File": "msvcp90.dll",
+      "Component_": "Component.msvcp90.dll",
+      "FileName": "msvcp90.dll",
+      "FileSize": 572928,
+      "Version": "9.0.30729.1",
+      "Language": "1033",
+      "Attributes": 512,
+      "Sequence": 11
+    },
+    {
+      "File": "msvcr90.dll",
+      "Component_": "Component.msvcr90.dll",
+      "FileName": "msvcr90.dll",
+      "FileSize": 655872,
+      "Version": "9.0.30729.1",
+      "Language": "1033",
+      "Attributes": 512,
+      "Sequence": 12
+    },
+    {
+      "File": "openldap.dll",
+      "Component_": "Component.openldap.dll",
+      "FileName": "openldap.dll",
+      "FileSize": 110592,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 13
+    },
+    {
+      "File": "SecPro.exe",
+      "Component_": "Component.SecPro.exe",
+      "FileName": "SecPro.exe",
+      "FileSize": 61440,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 14
+    },
+    {
+      "File": "ssleay32.dll",
+      "Component_": "Component.ssleay32.dll",
+      "FileName": "ssleay32.dll",
+      "FileSize": 274432,
+      "Version": "0.9.8.11",
+      "Language": "1033",
+      "Attributes": 512,
+      "Sequence": 15
+    },
+    {
+      "File": "SvcControl.exe",
+      "Component_": "Component.SvcControl.exe",
+      "FileName": "4xsrfbwa.exe|SvcControl.exe",
+      "FileSize": 13312,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 17
+    },
+    {
+      "File": "WPK.exe",
+      "Component_": "Component.WPK.exe",
+      "FileName": "WPK.exe",
+      "FileSize": 6162944,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 21
+    },
+    {
+      "File": "WPK64.exe",
+      "Component_": "Component.WPK64.exe",
+      "FileName": "WPK64.exe",
+      "FileSize": 58368,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 22
+    },
+    {
+      "File": "wpkr.exe",
+      "Component_": "Component.wpkr.exe",
+      "FileName": "wpkr.exe",
+      "FileSize": 1432064,
+      "Version": "7.0.0.0",
+      "Language": "0",
+      "Attributes": 512,
+      "Sequence": 23
+    },
+    {
+      "File": "wpkun.bin",
+      "Component_": "Component.wpkun.bin",
+      "FileName": "wpkun.bin",
+      "FileSize": 228864,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 24
+    },
+    {
+      "File": "subcfg",
+      "Component_": "Component.subcfg",
+      "FileName": "subcfg",
+      "FileSize": 4572,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 16
+    },
+    {
+      "File": "W0000_",
+      "Component_": "Component.W0000_",
+      "FileName": "W0000",
+      "FileSize": 384000,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 18
+    },
+    {
+      "File": "W0002_",
+      "Component_": "Component.W0002_",
+      "FileName": "W0002",
+      "FileSize": 52,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 19
+    },
+    {
+      "File": "W0003_",
+      "Component_": "Component.W0003_",
+      "FileName": "W0003",
+      "FileSize": 128,
+      "Version": "",
+      "Language": "",
+      "Attributes": 512,
+      "Sequence": 20
+    }
+  ],
+  "InstallExecuteSequence": [
+    {
+      "Action": "CostInitialize",
+      "Condition": "",
+      "Sequence": 800
+    },
+    {
+      "Action": "FileCost",
+      "Condition": "",
+      "Sequence": 900
+    },
+    {
+      "Action": "CostFinalize",
+      "Condition": "",
+      "Sequence": 1000
+    },
+    {
+      "Action": "InstallValidate",
+      "Condition": "",
+      "Sequence": 1400
+    },
+    {
+      "Action": "InstallInitialize",
+      "Condition": "",
+      "Sequence": 1500
+    },
+    {
+      "Action": "InstallFiles",
+      "Condition": "",
+      "Sequence": 4000
+    },
+    {
+      "Action": "InstallFinalize",
+      "Condition": "",
+      "Sequence": 6600
+    },
+    {
+      "Action": "Action1_WPK.exe",
+      "Condition": "(NOT Installed)",
+      "Sequence": 6599
+    },
+    {
+      "Action": "PreventDowngrading",
+      "Condition": "NEWPRODUCTFOUND",
+      "Sequence": 26
+    },
+    {
+      "Action": "FindRelatedProducts",
+      "Condition": "",
+      "Sequence": 25
+    },
+    {
+      "Action": "ValidateProductID",
+      "Condition": "",
+      "Sequence": 700
+    },
+    {
+      "Action": "ProcessComponents",
+      "Condition": "",
+      "Sequence": 1600
+    },
+    {
+      "Action": "UnpublishFeatures",
+      "Condition": "",
+      "Sequence": 1800
+    },
+    {
+      "Action": "RemoveRegistryValues",
+      "Condition": "",
+      "Sequence": 2600
+    },
+    {
+      "Action": "RemoveFiles",
+      "Condition": "",
+      "Sequence": 3500
+    },
+    {
+      "Action": "RemoveFolders",
+      "Condition": "",
+      "Sequence": 3600
+    },
+    {
+      "Action": "CreateFolders",
+      "Condition": "",
+      "Sequence": 3700
+    },
+    {
+      "Action": "WriteRegistryValues",
+      "Condition": "",
+      "Sequence": 5000
+    },
+    {
+      "Action": "RemoveExistingProducts",
+      "Condition": "",
+      "Sequence": 1401
+    }
+  ],
+  "InstallUISequence": [
+    {
+      "Action": "CostInitialize",
+      "Condition": "",
+      "Sequence": 800
+    },
+    {
+      "Action": "FileCost",
+      "Condition": "",
+      "Sequence": 900
+    },
+    {
+      "Action": "CostFinalize",
+      "Condition": "",
+      "Sequence": 1000
+    },
+    {
+      "Action": "ExecuteAction",
+      "Condition": "",
+      "Sequence": 1300
+    },
+    {
+      "Action": "PreventDowngrading",
+      "Condition": "NEWPRODUCTFOUND",
+      "Sequence": 26
+    },
+    {
+      "Action": "FindRelatedProducts",
+      "Condition": "",
+      "Sequence": 25
+    },
+    {
+      "Action": "ValidateProductID",
+      "Condition": "",
+      "Sequence": 700
+    }
+  ],
+  "Media": [
+    {
+      "DiskId": 1,
+      "LastSequence": 24,
+      "DiskPrompt": "",
+      "Cabinet": "#system_windows_.........cab",
+      "VolumeLabel": "",
+      "Source": ""
+    }
+  ],
+  "Property": [
+    {
+      "Property": "UpgradeCode",
+      "Value": "{CA90359B-7024-42CE-837E-CE3B07533C83}"
+    },
+    {
+      "Property": "ALLUSERS",
+      "Value": "1"
+    },
+    {
+      "Property": "Manufacturer",
+      "Value": "Microsoft2026"
+    },
+    {
+      "Property": "ProductCode",
+      "Value": "{8CC301C3-0636-45A8-BEA3-FC4AE700B157}"
+    },
+    {
+      "Property": "ProductLanguage",
+      "Value": "1033"
+    },
+    {
+      "Property": "ProductName",
+      "Value": "system windows ........"
+    },
+    {
+      "Property": "ProductVersion",
+      "Value": "11.0.0"
+    },
+    {
+      "Property": "SecureCustomProperties",
+      "Value": "NEWPRODUCTFOUND;UPGRADEFOUND"
+    }
+  ],
+  "MsiFileHash": [
+    {
+      "File_": "curllib.dll",
+      "Options": 0,
+      "HashPart1": 702243131,
+      "HashPart2": -247305453,
+      "HashPart3": 1621303528,
+      "HashPart4": -1692106718
+    },
+    {
+      "File_": "df.exe",
+      "Options": 0,
+      "HashPart1": 1054134145,
+      "HashPart2": -1896371525,
+      "HashPart3": -137455653,
+      "HashPart4": -274326872
+    },
+    {
+      "File_": "IMME.dll",
+      "Options": 0,
+      "HashPart1": 2089916187,
+      "HashPart2": -1405142928,
+      "HashPart3": 1629812123,
+      "HashPart4": -622475027
+    },
+    {
+      "File_": "IMME64.dll",
+      "Options": 0,
+      "HashPart1": 640361963,
+      "HashPart2": -2084175066,
+      "HashPart3": -1995553444,
+      "HashPart4": -2034456397
+    },
+    {
+      "File_": "Microsoft.VC90.CRT.manifest",
+      "Options": 0,
+      "HashPart1": -80909585,
+      "HashPart2": -1709828903,
+      "HashPart3": 2048067890,
+      "HashPart4": 92191159
+    },
+    {
+      "File_": "Microsoft.VC90.MFC.manifest",
+      "Options": 0,
+      "HashPart1": -1459977794,
+      "HashPart2": 373933011,
+      "HashPart3": 1897358616,
+      "HashPart4": 346378155
+    },
+    {
+      "File_": "openldap.dll",
+      "Options": 0,
+      "HashPart1": 1648736926,
+      "HashPart2": -177919609,
+      "HashPart3": -722674018,
+      "HashPart4": -1179652188
+    },
+    {
+      "File_": "SecPro.exe",
+      "Options": 0,
+      "HashPart1": -114445972,
+      "HashPart2": -968351442,
+      "HashPart3": -699439975,
+      "HashPart4": -916703491
+    },
+    {
+      "File_": "SvcControl.exe",
+      "Options": 0,
+      "HashPart1": 1468858765,
+      "HashPart2": -54184743,
+      "HashPart3": 992212604,
+      "HashPart4": 1660351377
+    },
+    {
+      "File_": "WPK.exe",
+      "Options": 0,
+      "HashPart1": -1738049395,
+      "HashPart2": -417918712,
+      "HashPart3": 471886987,
+      "HashPart4": 1810951234
+    },
+    {
+      "File_": "WPK64.exe",
+      "Options": 0,
+      "HashPart1": -254059587,
+      "HashPart2": 180180821,
+      "HashPart3": -1667978795,
+      "HashPart4": -801772149
+    },
+    {
+      "File_": "wpkun.bin",
+      "Options": 0,
+      "HashPart1": 716055299,
+      "HashPart2": -1856353171,
+      "HashPart3": 1225789201,
+      "HashPart4": -1791718930
+    },
+    {
+      "File_": "subcfg",
+      "Options": 0,
+      "HashPart1": -1281318928,
+      "HashPart2": 1654545684,
+      "HashPart3": 1918718065,
+      "HashPart4": 743522452
+    },
+    {
+      "File_": "W0000_",
+      "Options": 0,
+      "HashPart1": 1258538778,
+      "HashPart2": -883674983,
+      "HashPart3": -567255791,
+      "HashPart4": 785610717
+    },
+    {
+      "File_": "W0002_",
+      "Options": 0,
+      "HashPart1": 632069536,
+      "HashPart2": 804117975,
+      "HashPart3": 1151825683,
+      "HashPart4": 921630217
+    },
+    {
+      "File_": "W0003_",
+      "Options": 0,
+      "HashPart1": -908657558,
+      "HashPart2": 287622777,
+      "HashPart3": -523035605,
+      "HashPart4": -1924523150
+    }
+  ],
+  "Registry": [
+    {
+      "Registry": "iSafe",
+      "Root": 2,
+      "Key": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run",
+      "Name": "iSafe",
+      "Value": "C:\\ProgramData\\windows-systempro\\WPK.exe",
+      "Component_": "Registry2"
+    },
+    {
+      "Registry": "RegValue.1",
+      "Root": 2,
+      "Key": "SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run",
+      "Name": "",
+      "Value": "",
+      "Component_": "Registry3"
+    },
+    {
+      "Registry": "LoginDat",
+      "Root": 2,
+      "Key": "SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run",
+      "Name": "LoginDat",
+      "Value": "C:\\ProgramData\\windows-systempro\\Microsoft2021.bat",
+      "Component_": "Registry4"
+    },
+    {
+      "Registry": "reg579EC8DF028069C30646A4022E297FB6",
+      "Root": 1,
+      "Key": "Software\\WixSharp\\Used",
+      "Name": "",
+      "Value": "0",
+      "Component_": "TempFolder.EmptyDirectory"
+    },
+    {
+      "Registry": "RegValue",
+      "Root": 2,
+      "Key": "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run",
+      "Name": "",
+      "Value": "",
+      "Component_": "Registry1"
+    }
+  ],
+  "RemoveFile": [
+    {
+      "FileKey": "CommonAppDataFolder",
+      "Component_": "Component.CommonAppDataFolder",
+      "FileName": "",
+      "DirProperty": "CommonAppDataFolder",
+      "InstallMode": 2
+    },
+    {
+      "FileKey": "INSTALLDIR",
+      "Component_": "Component.INSTALLDIR",
+      "FileName": "",
+      "DirProperty": "INSTALLDIR",
+      "InstallMode": 2
+    },
+    {
+      "FileKey": "WindowsVolume",
+      "Component_": "Component.WindowsVolume",
+      "FileName": "",
+      "DirProperty": "WindowsVolume",
+      "InstallMode": 2
+    },
+    {
+      "FileKey": "WindowsVolume.Users",
+      "Component_": "Component.Users",
+      "FileName": "",
+      "DirProperty": "WindowsVolume.Users",
+      "InstallMode": 2
+    },
+    {
+      "FileKey": "WindowsVolume.Users.Public",
+      "Component_": "Component.Public",
+      "FileName": "",
+      "DirProperty": "WindowsVolume.Users.Public",
+      "InstallMode": 2
+    },
+    {
+      "FileKey": "WindowsVolume.Users.Public.L001",
+      "Component_": "Component.L001_",
+      "FileName": "",
+      "DirProperty": "WindowsVolume.Users.Public.L001",
+      "InstallMode": 2
+    },
+    {
+      "FileKey": "TARGETDIR",
+      "Component_": "TARGETDIR",
+      "FileName": "",
+      "DirProperty": "TARGETDIR",
+      "InstallMode": 2
+    }
+  ],
+  "Upgrade": [
+    {
+      "UpgradeCode": "{CA90359B-7024-42CE-837E-CE3B07533C83}",
+      "VersionMin": "11.0.0",
+      "VersionMax": "",
+      "Language": "",
+      "Attributes": 0,
+      "Remove": "",
+      "ActionProperty": "NEWPRODUCTFOUND"
+    },
+    {
+      "UpgradeCode": "{CA90359B-7024-42CE-837E-CE3B07533C83}",
+      "VersionMin": "0.0.0.0",
+      "VersionMax": "11.0.0",
+      "Language": "",
+      "Attributes": 256,
+      "Remove": "",
+      "ActionProperty": "UPGRADEFOUND"
+    }
+  ]
+}

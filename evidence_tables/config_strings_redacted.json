@@ -1,0 +1,98 @@
+[
+  {
+    "offset": "0x1c",
+    "bytes": 20,
+    "text": "Other mail",
+    "secret": false
+  },
+  {
+    "offset": "0xec",
+    "bytes": 30,
+    "text": "smtp.yandex.com",
+    "secret": false
+  },
+  {
+    "offset": "0x1bc",
+    "bytes": 54,
+    "text": "taratararosoroso@yandex.com",
+    "secret": false
+  },
+  {
+    "offset": "0x284",
+    "bytes": 32,
+    "text": "[REDACTED SMTP PASSWORD]",
+    "secret": true
+  },
+  {
+    "offset": "0x39c",
+    "bytes": 20,
+    "text": "**********",
+    "secret": false
+  },
+  {
+    "offset": "0x3d8",
+    "bytes": 18,
+    "text": "isafeklg0",
+    "secret": false
+  },
+  {
+    "offset": "0x478",
+    "bytes": 10,
+    "text": "GoPay",
+    "secret": false
+  },
+  {
+    "offset": "0x4a0",
+    "bytes": 10,
+    "text": "Hesla",
+    "secret": false
+  },
+  {
+    "offset": "0x4c8",
+    "bytes": 10,
+    "text": "Login",
+    "secret": false
+  },
+  {
+    "offset": "0x518",
+    "bytes": 14,
+    "text": "payment",
+    "secret": false
+  },
+  {
+    "offset": "0x540",
+    "bytes": 12,
+    "text": "platba",
+    "secret": false
+  },
+  {
+    "offset": "0x570",
+    "bytes": 28,
+    "text": "Administrateur",
+    "secret": false
+  },
+  {
+    "offset": "0x778",
+    "bytes": 28,
+    "text": "DefaultAccount",
+    "secret": false
+  },
+  {
+    "offset": "0x980",
+    "bytes": 12,
+    "text": "FAKHRI",
+    "secret": false
+  },
+  {
+    "offset": "0xb88",
+    "bytes": 10,
+    "text": "Invit",
+    "secret": false
+  },
+  {
+    "offset": "0xd90",
+    "bytes": 36,
+    "text": "WDAGUtilityAccount",
+    "secret": false
+  }
+]

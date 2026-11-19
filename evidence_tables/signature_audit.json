@@ -1,0 +1,1455 @@
+[
+  {
+    "task": 8,
+    "signature": "antivm_checks_available_memory",
+    "severity": 1,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 2356,
+        "process": "dllhost.exe",
+        "api": "GlobalMemoryStatusEx",
+        "id": 1004,
+        "timestamp": "2026-11-19 17:16:16,696",
+        "status": true,
+        "arguments": {
+          "MemoryLoad": "11",
+          "TotalPhysicalMB": "20460"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "dllhost.exe": 1
+    }
+  },
+  {
+    "task": 8,
+    "signature": "queries_keyboard_layout",
+    "severity": 1,
+    "mark_count": 9,
+    "samples": [
+      {
+        "pid": 5548,
+        "process": "backgroundTaskHost.exe",
+        "api": "GetKeyboardLayout",
+        "id": 13,
+        "timestamp": "2026-11-19 17:12:49,498",
+        "status": true,
+        "arguments": {
+          "KeyboardLayout": "0x00000416",
+          "LanguageName": "Portuguese (Brazil)"
+        }
+      },
+      {
+        "pid": 2036,
+        "process": "mobsync.exe",
+        "api": "GetKeyboardLayout",
+        "id": 766,
+        "timestamp": "2026-11-19 17:12:53,561",
+        "status": true,
+        "arguments": {
+          "KeyboardLayout": "0x00000416",
+          "LanguageName": "Portuguese (Brazil)"
+        }
+      },
+      {
+        "pid": 2036,
+        "process": "mobsync.exe",
+        "api": "GetKeyboardLayout",
+        "id": 786,
+        "timestamp": "2026-11-19 17:12:53,561",
+        "status": true,
+        "arguments": {
+          "KeyboardLayout": "0x00000416",
+          "LanguageName": "Portuguese (Brazil)"
+        }
+      },
+      {
+        "pid": 2036,
+        "process": "mobsync.exe",
+        "api": "GetKeyboardLayout",
+        "id": 884,
+        "timestamp": "2026-11-19 17:13:03,654",
+        "status": true,
+        "arguments": {
+          "KeyboardLayout": "0x00000416",
+          "LanguageName": "Portuguese (Brazil)"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "backgroundTaskHost.exe": 1,
+      "mobsync.exe": 4,
+      "RuntimeBroker.exe": 4
+    }
+  },
+  {
+    "task": 8,
+    "signature": "accesses_public_folder",
+    "severity": 1,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 8,
+    "signature": "antidebug_setunhandledexceptionfilter",
+    "severity": 1,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 5548,
+        "process": "backgroundTaskHost.exe",
+        "api": "SetUnhandledExceptionFilter",
+        "id": 36,
+        "timestamp": "2026-11-19 17:12:49,561",
+        "status": true,
+        "arguments": {
+          "ExceptionFilter": "0x7ff6d2b41330"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "backgroundTaskHost.exe": 1
+    }
+  },
+  {
+    "task": 8,
+    "signature": "dll_load_uncommon_file_types",
+    "severity": 1,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 6892,
+        "process": "explorer.exe",
+        "api": "LdrLoadDll",
+        "id": 308,
+        "timestamp": "2026-11-19 17:12:49,559",
+        "status": true,
+        "arguments": {
+          "Flags": "0x00000000",
+          "FileName": "C:\\Windows\\System32\\bthprops.cpl",
+          "BaseAddress": "0x7ffa03fc0000"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "explorer.exe": 1
+    }
+  },
+  {
+    "task": 8,
+    "signature": "stealth_timeout",
+    "severity": 1,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 6024,
+        "process": "msiexec.exe",
+        "api": "NtTerminateProcess",
+        "id": 1101,
+        "timestamp": "2026-11-19 17:13:10,873",
+        "status": true,
+        "arguments": {
+          "ProcessHandle": "0x00000000",
+          "ExitCode": "0x00000000"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "msiexec.exe": 1
+    }
+  },
+  {
+    "task": 8,
+    "signature": "language_check_registry",
+    "severity": 1,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 8,
+    "signature": "antisandbox_system_parameters_info",
+    "severity": 2,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 6024,
+        "process": "msiexec.exe",
+        "api": "SystemParametersInfoW",
+        "id": 1085,
+        "timestamp": "2026-11-19 17:13:10,701",
+        "status": true,
+        "arguments": {
+          "Action": "0x00000011",
+          "uiParam": "0x00000000"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "msiexec.exe": 1
+    }
+  },
+  {
+    "task": 8,
+    "signature": "privilege_elevation_check",
+    "severity": 2,
+    "mark_count": 8,
+    "samples": [
+      {
+        "pid": 1176,
+        "process": "dllhost.exe",
+        "api": "NtQueryInformationToken",
+        "id": 105,
+        "timestamp": "2026-11-19 17:12:53,768",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "20",
+          "TokenInformation": "\\x00\\x00\\x00\\x00"
+        }
+      },
+      {
+        "pid": 1176,
+        "process": "dllhost.exe",
+        "api": "NtQueryInformationToken",
+        "id": 196,
+        "timestamp": "2026-11-19 17:12:53,783",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "20",
+          "TokenInformation": "\\x00\\x00\\x00\\x00"
+        }
+      },
+      {
+        "pid": 8984,
+        "process": "WmiPrvSE.exe",
+        "api": "NtQueryInformationToken",
+        "id": 149,
+        "timestamp": "2026-11-19 17:14:33,881",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "20",
+          "TokenInformation": "\\x01\\x00\\x00\\x00"
+        }
+      },
+      {
+        "pid": 8984,
+        "process": "WmiPrvSE.exe",
+        "api": "NtQueryInformationToken",
+        "id": 150,
+        "timestamp": "2026-11-19 17:14:33,881",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "18",
+          "TokenInformation": "\\x01\\x00\\x00\\x00"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "dllhost.exe": 6,
+      "WmiPrvSE.exe": 2
+    }
+  },
+  {
+    "task": 8,
+    "signature": "dllload_suspicious_directory",
+    "severity": 2,
+    "mark_count": 265,
+    "samples": [
+      {
+        "pid": 6892,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 0,
+        "timestamp": "2026-11-19 17:12:47,715",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\WINDOWS\\system32\\rsaenh",
+          "DllBase": "0x7ffa352f0000"
+        }
+      },
+      {
+        "pid": 6892,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 125,
+        "timestamp": "2026-11-19 17:12:49,262",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\WINDOWS\\system32\\BatMeter",
+          "DllBase": "0x7ffa0cdb0000"
+        }
+      },
+      {
+        "pid": 6892,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 132,
+        "timestamp": "2026-11-19 17:12:49,278",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\WINDOWS\\system32\\WMICLNT",
+          "DllBase": "0x7ffa30180000"
+        }
+      },
+      {
+        "pid": 6892,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 137,
+        "timestamp": "2026-11-19 17:12:49,293",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\WINDOWS\\System32\\coml2",
+          "DllBase": "0x7ffa393f0000"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "explorer.exe": 45,
+      "svchost.exe": 2,
+      "dllhost.exe": 35,
+      "backgroundTaskHost.exe": 17,
+      "mobsync.exe": 21,
+      "RuntimeBroker.exe": 60,
+      "msiexec.exe": 19,
+      "WmiPrvSE.exe": 62,
+      "SoftLandingTask.exe": 4
+    }
+  },
+  {
+    "task": 8,
+    "signature": "per_file_acl_token_check",
+    "severity": 2,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 4704,
+        "process": "RuntimeBroker.exe",
+        "api": "NtQueryInformationToken",
+        "id": 297,
+        "timestamp": "2026-11-19 17:12:55,634",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "6",
+          "TokenInformation": "h\\x19\\x14t\\xe3\\x02\\x00\\x00\\x02\\x00\\\\x00\\x03\\x00\\x00\\x00\\x00\\x00$\\x00\\x00\\x00\\x00\\x10\\x01\\x05\\x00\\x00\\x00\\x00\\x00\\x05\\x15\\x00\\x00\\x00aN\\x16\\x16\\xfa\\xcf\\xfa>^\\xcd\\xb5\\x16\\xe9\\x03\\x00\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\x00\\x10\\x01\\x01\\x00\\x00\\x00\\x00\\x00\\x05\\x12\\x00\\x00\\x00\\x00\\x00\\x1c\\x00\\x00\\x00\\x00\\xa0\\x01\\x03\\x00\\x00\\x00\\x00\\x00\\x05\\x05\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x9e\\xbd\\x04\\x00"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "RuntimeBroker.exe": 1
+    }
+  },
+  {
+    "task": 8,
+    "signature": "creates_suspended_process",
+    "severity": 2,
+    "mark_count": 13,
+    "samples": [
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 19,
+        "timestamp": "2026-11-19 17:12:49,200",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "C:\\WINDOWS\\system32\\backgroundTaskHost.exe",
+          "CommandLine": "\"C:\\WINDOWS\\system32\\backgroundTaskHost.exe\" -ServerName:App.AppXapskvk16gk8da8kch5g4qxh42vxccved.mca",
+          "CreationFlags": "0x00080414",
+          "ProcessId": "5548",
+          "ThreadId": "664",
+          "ParentHandle": "0xffffffff",
+          "ProcessHandle": "0x00001268",
+          "ThreadHandle": "0x0000125c",
+          "StackPivoted": "no"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 42,
+        "timestamp": "2026-11-19 17:12:55,091",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "",
+          "CommandLine": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",
+          "CreationFlags": "0x00000414",
+          "ProcessId": "4704",
+          "ThreadId": "9060",
+          "ProcessHandle": "0x000012d0",
+          "ThreadHandle": "0x00001214",
+          "StackPivoted": "no"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 92,
+        "timestamp": "2026-11-19 17:12:56,419",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "C:\\WINDOWS\\system32\\backgroundTaskHost.exe",
+          "CommandLine": "\"C:\\WINDOWS\\system32\\backgroundTaskHost.exe\" -ServerName:App.AppXmtcan0h2tfbfy7k9kn8hbxb6dmzz1zh0.mca",
+          "CreationFlags": "0x00080414",
+          "ProcessId": "7476",
+          "ThreadId": "9040",
+          "ParentHandle": "0xffffffff",
+          "ProcessHandle": "0x0000115c",
+          "ThreadHandle": "0x00001154",
+          "StackPivoted": "no"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 167,
+        "timestamp": "2026-11-19 17:12:58,763",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "C:\\WINDOWS\\system32\\BackgroundTaskHost.exe",
+          "CommandLine": "\"C:\\WINDOWS\\system32\\BackgroundTaskHost.exe\" -ServerName:BackgroundTaskHost.WebAccountProvider",
+          "CreationFlags": "0x00080414",
+          "ProcessId": "6024",
+          "ThreadId": "6136",
+          "ParentHandle": "0xffffffff",
+          "ProcessHandle": "0x00001184",
+          "ThreadHandle": "0x00001328",
+          "StackPivoted": "no"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "svchost.exe": 13
+    }
+  },
+  {
+    "task": 8,
+    "signature": "resumethread_remote_process",
+    "severity": 2,
+    "mark_count": 12,
+    "samples": [
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 20,
+        "timestamp": "2026-11-19 17:12:49,513",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x0000125c",
+          "SuspendCount": "1",
+          "ThreadId": "664",
+          "ProcessId": "5548"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 43,
+        "timestamp": "2026-11-19 17:12:55,466",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x00001214",
+          "SuspendCount": "1",
+          "ThreadId": "9060",
+          "ProcessId": "4704"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 94,
+        "timestamp": "2026-11-19 17:12:56,575",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x00001154",
+          "SuspendCount": "1",
+          "ThreadId": "9040",
+          "ProcessId": "7476"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 168,
+        "timestamp": "2026-11-19 17:12:58,825",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x00001328",
+          "SuspendCount": "1",
+          "ThreadId": "6136",
+          "ProcessId": "6024"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "svchost.exe": 12
+    }
+  },
+  {
+    "task": 8,
+    "signature": "accesses_recyclebin",
+    "severity": 2,
+    "mark_count": 8,
+    "samples": [
+      {
+        "pid": 6892,
+        "process": "explorer.exe",
+        "api": "NtOpenFile",
+        "id": 1298,
+        "timestamp": "2026-11-19 17:12:52,247",
+        "status": true,
+        "arguments": {
+          "FileHandle": "0x00002a10",
+          "DesiredAccess": "0x00020080",
+          "FileName": "C:\\$Recycle.Bin\\S-1-5-21-370560609-1056624634-381013342-1001",
+          "ShareAccess": "7"
+        }
+      },
+      {
+        "pid": 6892,
+        "process": "explorer.exe",
+        "api": "NtOpenFile",
+        "id": 1309,
+        "timestamp": "2026-11-19 17:12:52,262",
+        "status": true,
+        "arguments": {
+          "FileHandle": "0x00000570",
+          "DesiredAccess": "0x00100080",
+          "FileName": "C:\\$Recycle.Bin\\S-1-5-21-370560609-1056624634-381013342-1001\\desktop.ini",
+          "ShareAccess": "3"
+        }
+      },
+      {
+        "pid": 6892,
+        "process": "explorer.exe",
+        "api": "NtOpenFile",
+        "id": 1311,
+        "timestamp": "2026-11-19 17:12:52,262",
+        "status": false,
+        "arguments": {
+          "FileHandle": "0x00000000",
+          "DesiredAccess": "0x00100080",
+          "FileName": "C:\\$Recycle.Bin\\S-1-5-21-370560609-1056624634-381013342-1001",
+          "ShareAccess": "3"
+        }
+      },
+      {
+        "pid": 6892,
+        "process": "explorer.exe",
+        "api": "NtOpenFile",
+        "id": 1313,
+        "timestamp": "2026-11-19 17:12:52,278",
+        "status": true,
+        "arguments": {
+          "FileHandle": "0x00002a10",
+          "DesiredAccess": "0x00100080",
+          "FileName": "C:\\$Recycle.Bin\\S-1-5-21-370560609-1056624634-381013342-1001",
+          "ShareAccess": "3"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "explorer.exe": 8
+    }
+  },
+  {
+    "task": 8,
+    "signature": "terminates_remote_process",
+    "severity": 2,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "NtTerminateProcess",
+        "id": 416,
+        "timestamp": "2026-11-19 17:17:26,466",
+        "status": true,
+        "arguments": {
+          "ProcessHandle": "0x00000e38",
+          "ExitCode": "0x80070bf7"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "svchost.exe": 1
+    }
+  },
+  {
+    "task": 8,
+    "signature": "network_connection_via_suspicious_process",
+    "severity": 2,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 8,
+    "signature": "mountpoint_manager_access",
+    "severity": 3,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 6892,
+        "process": "explorer.exe",
+        "api": "NtCreateFile",
+        "id": 265,
+        "timestamp": "2026-11-19 17:12:49,465",
+        "status": true,
+        "arguments": {
+          "FileHandle": "0x00001dc4",
+          "DesiredAccess": "0x00100080",
+          "FileName": "\\??\\MountPointManager",
+          "CreateDisposition": "1",
+          "ShareAccess": "3",
+          "FileAttributes": "0x00000080",
+          "ExistedBefore": "yes",
+          "StackPivoted": "no"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "explorer.exe": 1
+    }
+  },
+  {
+    "task": 9,
+    "signature": "stealth_network",
+    "severity": 1,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 9,
+    "signature": "queries_keyboard_layout",
+    "severity": 1,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 1296,
+        "process": "RuntimeBroker.exe",
+        "api": "GetKeyboardLayout",
+        "id": 26,
+        "timestamp": "2026-11-19 17:28:31,558",
+        "status": true,
+        "arguments": {
+          "KeyboardLayout": "0x00000416",
+          "LanguageName": "Portuguese (Brazil)"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "RuntimeBroker.exe": 1
+    }
+  },
+  {
+    "task": 9,
+    "signature": "static_pe_pdbpath",
+    "severity": 1,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 9,
+    "signature": "antidebug_setunhandledexceptionfilter",
+    "severity": 1,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 7600,
+        "process": "WmiPrvSE.exe",
+        "api": "SetUnhandledExceptionFilter",
+        "id": 24,
+        "timestamp": "2026-11-19 17:28:10,808",
+        "status": true,
+        "arguments": {
+          "ExceptionFilter": "0x7ff61e6de620"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "WmiPrvSE.exe": 1
+    }
+  },
+  {
+    "task": 9,
+    "signature": "language_check_registry",
+    "severity": 1,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 9,
+    "signature": "privilege_elevation_check",
+    "severity": 2,
+    "mark_count": 2,
+    "samples": [
+      {
+        "pid": 7600,
+        "process": "WmiPrvSE.exe",
+        "api": "NtQueryInformationToken",
+        "id": 146,
+        "timestamp": "2026-11-19 17:28:10,839",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "20",
+          "TokenInformation": "\\x01\\x00\\x00\\x00"
+        }
+      },
+      {
+        "pid": 7600,
+        "process": "WmiPrvSE.exe",
+        "api": "NtQueryInformationToken",
+        "id": 147,
+        "timestamp": "2026-11-19 17:28:10,839",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "18",
+          "TokenInformation": "\\x01\\x00\\x00\\x00"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "WmiPrvSE.exe": 2
+    }
+  },
+  {
+    "task": 9,
+    "signature": "dllload_suspicious_directory",
+    "severity": 2,
+    "mark_count": 51,
+    "samples": [
+      {
+        "pid": 7044,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 270,
+        "timestamp": "2026-11-19 17:26:40,391",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\Windows\\System32\\ieframe",
+          "DllBase": "0x7ff82cba0000"
+        }
+      },
+      {
+        "pid": 7044,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 274,
+        "timestamp": "2026-11-19 17:26:40,531",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\WINDOWS\\SYSTEM32\\msIso",
+          "DllBase": "0x7ff8605d0000"
+        }
+      },
+      {
+        "pid": 7044,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 277,
+        "timestamp": "2026-11-19 17:26:40,578",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\WINDOWS\\SYSTEM32\\MLANG",
+          "DllBase": "0x7ff85f970000"
+        }
+      },
+      {
+        "pid": 7044,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 415,
+        "timestamp": "2026-11-19 17:26:40,953",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\WINDOWS\\SYSTEM32\\DiagnosticDataSettings",
+          "DllBase": "0x7ff865300000"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "explorer.exe": 17,
+      "svchost.exe": 1,
+      "backgroundTaskHost.exe": 5,
+      "RuntimeBroker.exe": 14,
+      "WmiPrvSE.exe": 14
+    }
+  },
+  {
+    "task": 9,
+    "signature": "creates_suspended_process",
+    "severity": 2,
+    "mark_count": 5,
+    "samples": [
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 49,
+        "timestamp": "2026-11-19 17:27:58,878",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "C:\\WINDOWS\\system32\\backgroundTaskHost.exe",
+          "CommandLine": "\"C:\\WINDOWS\\system32\\backgroundTaskHost.exe\" -ServerName:App.AppXpybpk6fj2fe0gb0jan49e6dncngk3pa1.mca",
+          "CreationFlags": "0x00080414",
+          "ProcessId": "7488",
+          "ThreadId": "7444",
+          "ParentHandle": "0xffffffff",
+          "ProcessHandle": "0x00001284",
+          "ThreadHandle": "0x00001280",
+          "StackPivoted": "no"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 50,
+        "timestamp": "2026-11-19 17:27:58,878",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "C:\\WINDOWS\\system32\\backgroundTaskHost.exe",
+          "CommandLine": "\"C:\\WINDOWS\\system32\\backgroundTaskHost.exe\" -ServerName:App.AppXapskvk16gk8da8kch5g4qxh42vxccved.mca",
+          "CreationFlags": "0x00080414",
+          "ProcessId": "7628",
+          "ThreadId": "7676",
+          "ParentHandle": "0xffffffff",
+          "ProcessHandle": "0x000011f0",
+          "ThreadHandle": "0x000012d0",
+          "StackPivoted": "no"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 51,
+        "timestamp": "2026-11-19 17:27:58,925",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "C:\\WINDOWS\\system32\\backgroundTaskHost.exe",
+          "CommandLine": "\"C:\\WINDOWS\\system32\\backgroundTaskHost.exe\" -ServerName:SettingsUXHostApp.AppXbcemfss8fnwzwnsjec8qzh0c3jnkn6x0.mca",
+          "CreationFlags": "0x00080414",
+          "ProcessId": "7452",
+          "ThreadId": "7528",
+          "ParentHandle": "0xffffffff",
+          "ProcessHandle": "0x00001350",
+          "ThreadHandle": "0x0000123c",
+          "StackPivoted": "no"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 60,
+        "timestamp": "2026-11-19 17:27:59,284",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "",
+          "CommandLine": "C:\\Windows\\System32\\RuntimeBroker.exe -Embedding",
+          "CreationFlags": "0x00000414",
+          "ProcessId": "5940",
+          "ThreadId": "5500",
+          "ProcessHandle": "0x00000e90",
+          "ThreadHandle": "0x00000ff4",
+          "StackPivoted": "no"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "svchost.exe": 5
+    }
+  },
+  {
+    "task": 9,
+    "signature": "resumethread_remote_process",
+    "severity": 2,
+    "mark_count": 5,
+    "samples": [
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 52,
+        "timestamp": "2026-11-19 17:27:58,987",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x00001280",
+          "SuspendCount": "1",
+          "ThreadId": "7444",
+          "ProcessId": "7488"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 53,
+        "timestamp": "2026-11-19 17:27:59,019",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x0000123c",
+          "SuspendCount": "1",
+          "ThreadId": "7528",
+          "ProcessId": "7452"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 61,
+        "timestamp": "2026-11-19 17:27:59,347",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x000012d0",
+          "SuspendCount": "1",
+          "ThreadId": "7676",
+          "ProcessId": "7628"
+        }
+      },
+      {
+        "pid": 1100,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 62,
+        "timestamp": "2026-11-19 17:27:59,691",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x00000ff4",
+          "SuspendCount": "1",
+          "ThreadId": "5500",
+          "ProcessId": "5940"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "svchost.exe": 5
+    }
+  },
+  {
+    "task": 9,
+    "signature": "invalid_authenticode_signature",
+    "severity": 2,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 9,
+    "signature": "mountpoint_manager_access",
+    "severity": 3,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 7044,
+        "process": "explorer.exe",
+        "api": "NtCreateFile",
+        "id": 63,
+        "timestamp": "2026-11-19 17:26:39,203",
+        "status": true,
+        "arguments": {
+          "FileHandle": "0x00002ba0",
+          "DesiredAccess": "0x00100080",
+          "FileName": "\\??\\MountPointManager",
+          "CreateDisposition": "1",
+          "ShareAccess": "3",
+          "FileAttributes": "0x00000080",
+          "ExistedBefore": "yes",
+          "StackPivoted": "no"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "explorer.exe": 1
+    }
+  },
+  {
+    "task": 9,
+    "signature": "pe_deep_entrypoint",
+    "severity": 3,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 9,
+    "signature": "static_pe_anomaly",
+    "severity": 3,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 13,
+    "signature": "stealth_network",
+    "severity": 1,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 13,
+    "signature": "queries_keyboard_layout",
+    "severity": 1,
+    "mark_count": 5,
+    "samples": [
+      {
+        "pid": 7172,
+        "process": "backgroundTaskHost.exe",
+        "api": "GetKeyboardLayout",
+        "id": 13,
+        "timestamp": "2026-11-19 17:49:51,786",
+        "status": true,
+        "arguments": {
+          "KeyboardLayout": "0x00000416",
+          "LanguageName": "Portuguese (Brazil)"
+        }
+      },
+      {
+        "pid": 9164,
+        "process": "RuntimeBroker.exe",
+        "api": "GetKeyboardLayout",
+        "id": 26,
+        "timestamp": "2026-11-19 17:49:52,055",
+        "status": true,
+        "arguments": {
+          "KeyboardLayout": "0x00000416",
+          "LanguageName": "Portuguese (Brazil)"
+        }
+      },
+      {
+        "pid": 9732,
+        "process": "RuntimeBroker.exe",
+        "api": "GetKeyboardLayout",
+        "id": 15,
+        "timestamp": "2026-11-19 17:49:56,034",
+        "status": true,
+        "arguments": {
+          "KeyboardLayout": "0x00000416",
+          "LanguageName": "Portuguese (Brazil)"
+        }
+      },
+      {
+        "pid": 7380,
+        "process": "SoftLandingTask.exe",
+        "api": "GetKeyboardLayout",
+        "id": 15,
+        "timestamp": "2026-11-19 17:51:10,302",
+        "status": true,
+        "arguments": {
+          "KeyboardLayout": "0x00000416",
+          "LanguageName": "Portuguese (Brazil)"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "backgroundTaskHost.exe": 1,
+      "RuntimeBroker.exe": 3,
+      "SoftLandingTask.exe": 1
+    }
+  },
+  {
+    "task": 13,
+    "signature": "static_pe_pdbpath",
+    "severity": 1,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 13,
+    "signature": "antidebug_setunhandledexceptionfilter",
+    "severity": 1,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 9164,
+        "process": "RuntimeBroker.exe",
+        "api": "SetUnhandledExceptionFilter",
+        "id": 41,
+        "timestamp": "2026-11-19 17:49:52,165",
+        "status": true,
+        "arguments": {
+          "ExceptionFilter": "0x7ff6d6ae9780"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "RuntimeBroker.exe": 1
+    }
+  },
+  {
+    "task": 13,
+    "signature": "language_check_registry",
+    "severity": 1,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 13,
+    "signature": "privilege_elevation_check",
+    "severity": 2,
+    "mark_count": 4,
+    "samples": [
+      {
+        "pid": 7860,
+        "process": "WmiPrvSE.exe",
+        "api": "NtQueryInformationToken",
+        "id": 147,
+        "timestamp": "2026-11-19 17:49:59,366",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "20",
+          "TokenInformation": "\\x01\\x00\\x00\\x00"
+        }
+      },
+      {
+        "pid": 7860,
+        "process": "WmiPrvSE.exe",
+        "api": "NtQueryInformationToken",
+        "id": 148,
+        "timestamp": "2026-11-19 17:49:59,366",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "18",
+          "TokenInformation": "\\x01\\x00\\x00\\x00"
+        }
+      },
+      {
+        "pid": 6232,
+        "process": "dllhost.exe",
+        "api": "NtQueryInformationToken",
+        "id": 104,
+        "timestamp": "2026-11-19 17:51:10,186",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "20",
+          "TokenInformation": "\\x00\\x00\\x00\\x00"
+        }
+      },
+      {
+        "pid": 6232,
+        "process": "dllhost.exe",
+        "api": "NtQueryInformationToken",
+        "id": 197,
+        "timestamp": "2026-11-19 17:51:10,233",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "20",
+          "TokenInformation": "\\x00\\x00\\x00\\x00"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "WmiPrvSE.exe": 2,
+      "dllhost.exe": 2
+    }
+  },
+  {
+    "task": 13,
+    "signature": "dllload_suspicious_directory",
+    "severity": 2,
+    "mark_count": 127,
+    "samples": [
+      {
+        "pid": 1416,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 270,
+        "timestamp": "2026-11-19 17:48:14,957",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\Windows\\System32\\ieframe",
+          "DllBase": "0x7ff812080000"
+        }
+      },
+      {
+        "pid": 1416,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 274,
+        "timestamp": "2026-11-19 17:48:15,035",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\WINDOWS\\SYSTEM32\\msIso",
+          "DllBase": "0x7ff844990000"
+        }
+      },
+      {
+        "pid": 1416,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 277,
+        "timestamp": "2026-11-19 17:48:15,066",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\WINDOWS\\SYSTEM32\\MLANG",
+          "DllBase": "0x7ff844600000"
+        }
+      },
+      {
+        "pid": 1416,
+        "process": "explorer.exe",
+        "api": "DllLoadNotification",
+        "id": 379,
+        "timestamp": "2026-11-19 17:48:15,348",
+        "status": true,
+        "arguments": {
+          "NotificationReason": "load",
+          "DllName": "C:\\WINDOWS\\SYSTEM32\\DiagnosticDataSettings",
+          "DllBase": "0x7ff84b2b0000"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "explorer.exe": 16,
+      "svchost.exe": 1,
+      "backgroundTaskHost.exe": 5,
+      "RuntimeBroker.exe": 42,
+      "WmiPrvSE.exe": 47,
+      "dllhost.exe": 12,
+      "SoftLandingTask.exe": 4
+    }
+  },
+  {
+    "task": 13,
+    "signature": "per_file_acl_token_check",
+    "severity": 2,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 7860,
+        "process": "WmiPrvSE.exe",
+        "api": "NtQueryInformationToken",
+        "id": 495,
+        "timestamp": "2026-11-19 17:50:01,585",
+        "status": true,
+        "arguments": {
+          "TokenInformationClass": "6",
+          "TokenInformation": "X\\xc1v\\x07w\\x02\\x00\\x00\\x02\\x00d\\x00\\x03\\x00\\x00\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\x00\\x10\\x01\\x01\\x00\\x00\\x00\\x00\\x00\\x05\\x12\\x00\\x00\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\x02\\x00\\x01\\x01\\x00\\x00\\x00\\x00\\x00\\x03\\x04\\x00\\x00\\x00\\x00\\x00(\\x00\\x00\\x00\\x00\\x10\\x01\\x06\\x00\\x00\\x00\\x00\\x00\\x05P\\x00\\x00\\x00Z\\x04\\x8d\\xdf\\xf9\\xc7C\n\\xb4P\\xd4\\xe7Gz!r\\xabAp\\xf4\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "WmiPrvSE.exe": 1
+    }
+  },
+  {
+    "task": 13,
+    "signature": "creates_suspended_process",
+    "severity": 2,
+    "mark_count": 9,
+    "samples": [
+      {
+        "pid": 1104,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 26,
+        "timestamp": "2026-11-19 17:48:16,440",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "C:\\WINDOWS\\system32\\BackgroundTaskHost.exe",
+          "CommandLine": "\"C:\\WINDOWS\\system32\\BackgroundTaskHost.exe\" -ServerName:BackgroundTaskHost.WebAccountProvider",
+          "CreationFlags": "0x00080414",
+          "ProcessId": "6848",
+          "ThreadId": "9236",
+          "ParentHandle": "0xffffffff",
+          "ProcessHandle": "0x00001230",
+          "ThreadHandle": "0x00000e84",
+          "StackPivoted": "no"
+        }
+      },
+      {
+        "pid": 1104,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 75,
+        "timestamp": "2026-11-19 17:49:51,503",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "C:\\WINDOWS\\system32\\backgroundTaskHost.exe",
+          "CommandLine": "\"C:\\WINDOWS\\system32\\backgroundTaskHost.exe\" -ServerName:App.AppXapskvk16gk8da8kch5g4qxh42vxccved.mca",
+          "CreationFlags": "0x00080414",
+          "ProcessId": "7172",
+          "ThreadId": "6916",
+          "ParentHandle": "0xffffffff",
+          "ProcessHandle": "0x00001260",
+          "ThreadHandle": "0x0000070c",
+          "StackPivoted": "no"
+        }
+      },
+      {
+        "pid": 1104,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 76,
+        "timestamp": "2026-11-19 17:49:51,519",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "C:\\WINDOWS\\system32\\backgroundTaskHost.exe",
+          "CommandLine": "\"C:\\WINDOWS\\system32\\backgroundTaskHost.exe\" -ServerName:SettingsUXHostApp.AppXbcemfss8fnwzwnsjec8qzh0c3jnkn6x0.mca",
+          "CreationFlags": "0x00080414",
+          "ProcessId": "6572",
+          "ThreadId": "4488",
+          "ParentHandle": "0xffffffff",
+          "ProcessHandle": "0x000010d4",
+          "ThreadHandle": "0x000010a4",
+          "StackPivoted": "no"
+        }
+      },
+      {
+        "pid": 1104,
+        "process": "svchost.exe",
+        "api": "CreateProcessInternalW",
+        "id": 77,
+        "timestamp": "2026-11-19 17:49:51,534",
+        "status": true,
+        "arguments": {
+          "ApplicationName": "C:\\WINDOWS\\system32\\backgroundTaskHost.exe",
+          "CommandLine": "\"C:\\WINDOWS\\system32\\backgroundTaskHost.exe\" -ServerName:App.AppXpybpk6fj2fe0gb0jan49e6dncngk3pa1.mca",
+          "CreationFlags": "0x00080414",
+          "ProcessId": "4384",
+          "ThreadId": "3544",
+          "ParentHandle": "0xffffffff",
+          "ProcessHandle": "0x00000ed0",
+          "ThreadHandle": "0x00001368",
+          "StackPivoted": "no"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "svchost.exe": 9
+    }
+  },
+  {
+    "task": 13,
+    "signature": "resumethread_remote_process",
+    "severity": 2,
+    "mark_count": 9,
+    "samples": [
+      {
+        "pid": 1104,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 27,
+        "timestamp": "2026-11-19 17:48:16,503",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x00000e84",
+          "SuspendCount": "1",
+          "ThreadId": "9236",
+          "ProcessId": "6848"
+        }
+      },
+      {
+        "pid": 1104,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 78,
+        "timestamp": "2026-11-19 17:49:51,581",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x00001368",
+          "SuspendCount": "1",
+          "ThreadId": "3544",
+          "ProcessId": "4384"
+        }
+      },
+      {
+        "pid": 1104,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 79,
+        "timestamp": "2026-11-19 17:49:51,597",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x000010a4",
+          "SuspendCount": "1",
+          "ThreadId": "4488",
+          "ProcessId": "6572"
+        }
+      },
+      {
+        "pid": 1104,
+        "process": "svchost.exe",
+        "api": "NtResumeThread",
+        "id": 87,
+        "timestamp": "2026-11-19 17:49:51,800",
+        "status": true,
+        "arguments": {
+          "ThreadHandle": "0x0000070c",
+          "SuspendCount": "1",
+          "ThreadId": "6916",
+          "ProcessId": "7172"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "svchost.exe": 9
+    }
+  },
+  {
+    "task": 13,
+    "signature": "invalid_authenticode_signature",
+    "severity": 2,
+    "mark_count": 0,
+    "samples": [],
+    "mark_process_counts": {}
+  },
+  {
+    "task": 13,
+    "signature": "mountpoint_manager_access",
+    "severity": 3,
+    "mark_count": 1,
+    "samples": [
+      {
+        "pid": 1416,
+        "process": "explorer.exe",
+        "api": "NtCreateFile",
+        "id": 64,
+        "timestamp": "2026-11-19 17:48:14,566",
+        "status": true,
+        "arguments": {
+          "FileHandle": "0x00002a0c",
+          "DesiredAccess": "0x00100080",
+          "FileName": "\\??\\MountPointManager",
+          "CreateDisposition": "1",
+          "ShareAccess": "3",
+          "FileAttributes": "0x00000080",
+          "ExistedBefore": "yes",
+          "StackPivoted": "no"
+        }
+      }
+    ],
+    "mark_process_counts": {
+      "explorer.exe": 1
+    }
+  }
+]
